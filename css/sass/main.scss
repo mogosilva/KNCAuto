@@ -1,0 +1,138 @@
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+/* Box Model Hack */
+* {
+	-moz-box-sizing: border-box; /* Firexfox */
+	-webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+	box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clear { 
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft { 
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* SASS VARIABLES                 
+/*******************************************/
+
+
+$primaryColor: #fff;
+$backgroundColor: #08146F;
+$hoverColor: #00FFED;
+
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+body {
+	font-size: 16px;
+	font-family: 'Oswald', sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+#services {
+	border: 2px solid black;
+	text-align: center;
+}
+
+header {
+	background: $backgroundColor;
+	color: $primaryColor;
+	height: 180px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+footer {
+	text-align: center;
+	color: $primaryColor;
+	background: $backgroundColor * 0.5;
+	padding: 10px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+h1	{
+	font-size: 3em;
+	padding: 30px;
+}
+
+nav {
+	ul {
+		li {
+			float: left;
+			width: 33.333%;
+			font-size: 1em;
+		}
+		a {
+			color: $primaryColor;
+			text-decoration: none;
+		}
+		a:hover {
+			color: $hoverColor;
+		}
+	}
+}
+
+#map {
+	width: 100%;
+	margin: 0 auto;
+	height: 400px;
+}
+
+#services {
+	section {
+		background: #000000;
+		float: left;
+		width: 75%;
+		padding: 62px 0;
+	}
+
+	img {
+		max-width: 1000px;
+	}
+	ul {
+		background: yellow;
+		float: left;
+		width: 25%;
+
+		li {
+			margin: 4.5px 0;
+			display: inline-block;
+			width: 100%;
+		}
+	}
+}
+
+/**********************RESPONSIVE**********************/
+
+
+
+@media (min-width: 200px) and (max-width: 900px){
+	
+}
