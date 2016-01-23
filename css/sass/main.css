@@ -40,65 +40,55 @@
 /*******************************************/
 body {
   font-size: 16px;
-  font-family: 'Oswald', sans-serif; }
+  font-family: 'Oswald', sans-serif;
+  background: #d9e6ef;
+  text-align: center; }
 
 /******************************************
 /* LAYOUT                   
 /*******************************************/
-#services {
-  border: 2px solid black;
-  text-align: center; }
-
 header {
-  background: #08146F;
-  color: #fff;
-  height: 180px;
-  text-align: center;
-  margin: 0 auto; }
+  background: #2c4eba;
+  color: #dbdde9;
+  margin: 0 auto;
+  padding: 20px 0; }
 
 footer {
-  text-align: center;
-  color: #fff;
-  background: #040a38;
+  color: #dbdde9;
+  background: #2c4eba;
   padding: 10px; }
 
 /******************************************
 /* ADDITIONAL STYLES                   
 /*******************************************/
 h1 {
-  font-size: 3em;
-  padding: 30px; }
+  font-size: 2em; }
 
 nav ul li {
-  float: left;
-  width: 33.333%;
+  display: inline-block;
+  width: 18%;
   font-size: 1em; }
 nav ul a {
-  color: #fff;
+  color: #dbdde9;
   text-decoration: none; }
 nav ul a:hover {
-  color: #00FFED; }
-
-#map {
-  width: 100%;
-  margin: 0 auto;
-  height: 400px; }
+  color: #45b1f1; }
 
 #services section {
-  background: #000000;
-  float: left;
-  width: 75%;
-  padding: 62px 0; }
+  padding: 20px 0; }
 #services img {
-  max-width: 1000px; }
+  max-width: 100%; }
 #services ul {
-  background: yellow;
-  float: left;
-  width: 25%; }
+  background: #589cff;
+  padding: 20px 0; }
   #services ul li {
-    margin: 4.5px 0;
-    display: inline-block;
-    width: 100%; }
+    width: 19%; }
+
+#map {
+  text-align: justify;
+  margin: 0 auto;
+  height: 400px;
+  background: #2c4eba; }
 
 /**********************RESPONSIVE**********************/
 
