@@ -38,9 +38,10 @@
 /*******************************************/
 
 
-$primaryColor: #fff;
-$backgroundColor: #08146F;
-$hoverColor: #00FFED;
+$primaryColor: #dbdde9;
+$backgroundColor: #2c4eba;
+$siteBackgroundColor: #d9e6ef; 
+$hoverColor: #45b1f1;
 
 /******************************************
 /* BASE STYLES                   
@@ -48,6 +49,8 @@ $hoverColor: #00FFED;
 body {
 	font-size: 16px;
 	font-family: 'Oswald', sans-serif;
+	background: $siteBackgroundColor;
+	text-align: center;
 }
 
 
@@ -55,22 +58,19 @@ body {
 /* LAYOUT                   
 /*******************************************/
 #services {
-	border: 2px solid black;
-	text-align: center;
+
 }
 
 header {
 	background: $backgroundColor;
 	color: $primaryColor;
-	height: 180px;
-	text-align: center;
 	margin: 0 auto;
+	padding: 20px 0;
 }
 
 footer {
-	text-align: center;
 	color: $primaryColor;
-	background: $backgroundColor * 0.5;
+	background: $backgroundColor;
 	padding: 10px;
 }
 
@@ -78,15 +78,16 @@ footer {
 /* ADDITIONAL STYLES                   
 /*******************************************/
 h1	{
-	font-size: 3em;
-	padding: 30px;
+	font-size: 2em;
 }
 
 nav {
+
 	ul {
+
 		li {
-			float: left;
-			width: 33.333%;
+			display: inline-block;
+			width: 18%;
 			font-size: 1em;
 		}
 		a {
@@ -99,35 +100,30 @@ nav {
 	}
 }
 
-#map {
-	width: 100%;
-	margin: 0 auto;
-	height: 400px;
-}
-
 #services {
 	section {
-		background: #000000;
-		float: left;
-		width: 75%;
-		padding: 62px 0;
+		padding: 20px 0;
 	}
 
 	img {
-		max-width: 1000px;
+		max-width: 100%;
 	}
 	ul {
-		background: yellow;
-		float: left;
-		width: 25%;
-
+		background: $backgroundColor*2;
+		padding: 20px 0;
 		li {
-			margin: 4.5px 0;
-			display: inline-block;
-			width: 100%;
+			width: 19%;
 		}
 	}
 }
+
+#map {
+	text-align: justify;
+	margin: 0 auto;
+	height: 400px;
+	background:$backgroundColor;
+}
+
 
 /**********************RESPONSIVE**********************/
 
