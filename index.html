@@ -12,7 +12,7 @@
 <body>
 	<header>
 	<nav>
-		<ul class="clearfix">		
+		<ul>		
 			<li><a href="#">SERVICES</a></li>
 			<li><a href="#">CONTACT</a></li>
 			<li><h1>K&amp;C Auto Body</h1></li>
@@ -22,10 +22,13 @@
 	</nav>
 	</header>
 
-	<div id = "services">
-		<section>
-			<img src="http://cityscoop.us/buenaparkca-signage/files/2013/05/Lexus-Before-and-after-Wrap.jpg">
+	<div class = "services">
+
+		<section class="clearfix">
+			<input type="button" class="btn" value="<">
+			<input type="button" class="btn" value=">">
 		</section>
+
 		<nav>
 			<ul>
 				<li><img src="http://placehold.it/250x300"></li>
@@ -35,18 +38,23 @@
 				<li><img src="http://placehold.it/250x300"></li>
 			</ul>
 		</nav>
+
 	</div>
+	<section class="reviews">
+		<ul>
+			<li>YELP BADGE</li>
+			<li>ANGIE'S LIST BADGE</li>
+		</ul>	
+	</section>
 
 	<div id = "contact">
 	<div id="map"></div>
-
-	<div id = "reviews">
-	</div>
 
 	<footer class = "clear">
 	<h3>K&amp;C Auto Body</h3>
 	<h3>17 Franklin St. Salem, MA, 01970</h3>
 	<h3>k_Cauto@hotmail.com</h3>
 	</footer>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
