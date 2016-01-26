@@ -16,9 +16,8 @@ else {
         zoom: 16 //starting zoom
     
     });
-    
-    map.scrollWheelZoom.disable();
 }
+
 
 // Carousel images of cars
 
