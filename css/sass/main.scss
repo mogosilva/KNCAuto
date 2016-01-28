@@ -109,14 +109,26 @@ nav {
 		}
 	ul {
 		background: $backgroundColor*2;
+		width: 100%;
 		padding: 50px 0;
+
 		
 		li {
 			display: inline-block;
-			width: 19%;
+			vertical-align: top;
+			width: 15%;
+			height: 300px;
+			margin:10px;
+			padding: 20px;
+			border-radius: 5px;
+			background: $siteBackgroundColor*0.8;
+			-webkit-box-shadow: 4px 4px 4px 2px $backgroundColor;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+ 			-moz-box-shadow:    4px 4px 4px 2px $backgroundColor;  /* Firefox 3.5 - 3.6 */
+  			box-shadow:         4px 4px 4px 2px $backgroundColor;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 		}
 	}
 }
+
 
 .reviews{
 	li{
@@ -139,7 +151,6 @@ nav {
 
 .btn{
 	float: left;
-	position: relative;
     background-color: $backgroundColor;
     padding: 6px 12px;
     line-height: 1.5;

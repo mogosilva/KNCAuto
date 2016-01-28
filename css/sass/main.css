@@ -84,10 +84,23 @@ nav a:hover {
   display: block; }
 .services ul {
   background: #589cff;
+  width: 100%;
   padding: 50px 0; }
   .services ul li {
     display: inline-block;
-    width: 19%; }
+    vertical-align: top;
+    width: 15%;
+    height: 300px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    background: #aeb8bf;
+    -webkit-box-shadow: 4px 4px 4px 2px #2c4eba;
+    /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 4px 4px 4px 2px #2c4eba;
+    /* Firefox 3.5 - 3.6 */
+    box-shadow: 4px 4px 4px 2px #2c4eba;
+    /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */ }
 
 .reviews li {
   color: #2c4eba;
@@ -106,7 +119,6 @@ nav a:hover {
 
 .btn {
   float: left;
-  position: relative;
   background-color: #2c4eba;
   padding: 6px 12px;
   line-height: 1.5;
