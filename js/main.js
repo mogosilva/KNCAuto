@@ -1,26 +1,3 @@
-
-//Code for MapBox
-mapboxgl.accessToken = 'pk.eyJ1IjoibW9nb3NpbHZhIiwiYSI6ImNpanJrOHQxZjBicml1NG01eHRuYTJ2d3oifQ.KUmx-Iy2D73MnUkYFrXw3Q';
-
-//Check to see if MapBox is subborted or user's device
-if (!mapboxgl.supported()) {
-    
-    alert('Your browser does not support Mapbox GL');
-} 
-else {
-    
-    var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v8', //stylesheet location
-        center: [-70.898428, 42.52688], //starting location
-        zoom: 16 //starting zoom
-    
-    });
-}
-
-
-// Carousel images of cars
-
 var images=["images/image_01.jpg","images/image_02.jpg"];
 var i=0;
 
@@ -53,4 +30,38 @@ function nextImage(){
 $(document).ready(function(){
 	$(".btn[value='>']").on("click",nextImage);
 	$(".btn[value='<']").on("click",previousImage);
+
+	//Code for MapBox
+	L.mapbox.accessToken = 'pk.eyJ1IjoibW9nb3NpbHZhIiwiYSI6ImNpanJrOHQxZjBicml1NG01eHRuYTJ2d3oifQ.KUmx-Iy2D73MnUkYFrXw3Q';
+
+	//Creates Map
+	var map = new L.mapbox.map('map', 'mapbox.streets', {
+	}).setView([42.52688, -70.898428], 17);
+
+	L.mapbox.featureLayer({
+    	// this feature is in the GeoJSON format: see geojson.org
+    	// for the full specification
+    	type: 'Feature',
+    	geometry: {
+     	   type: 'Point',
+     	   // coordinates here are in longitude, latitude order because
+      	  // x, y is the standard for GeoJSON and many formats
+      	  coordinates: [-70.898428, 42.52688]
+   		},
+   	 	properties: {
+        	title: "K&C's Auto Body",
+        	description: "17 Franklin St. Salem, MA, 01970",
+        	// one can customize markers by adding simplestyle properties
+        	// https://www.mapbox.com/guides/an-open-platform/#simplestyle
+        	'marker-size': 'large',
+        	'marker-color': '#2c4eba',
+        	'marker-symbol': 'car'
+    	}
+	}).addTo(map);
+
+	map.touchZoom.disable();
+	map.doubleClickZoom.disable();
+	map.scrollWheelZoom.disable();
+	map.keyboard.disable();
+
 });
