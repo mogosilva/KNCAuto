@@ -38,9 +38,9 @@
 /*******************************************/
 
 
-$primaryColor: #dbdde9;
+$color: #dbdde9;
 $backgroundColor: #2c4eba;
-$siteBackgroundColor: #d9e6ef; 
+$altBackground: #d9e6ef; 
 $hoverColor: #45b1f1;
 
 @mixin responsive-bg-image($image-height, $image-width) {
@@ -54,11 +54,12 @@ $hoverColor: #45b1f1;
 /* BASE STYLES                   
 /*******************************************/
 body {
-	font-size: 16px;
-	font-family: 'Oswald', sans-serif;
-	background: $siteBackgroundColor;
+	font-size: 18px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 400;
+	background: $backgroundColor;
 	text-align: center;
-	color: $primaryColor;
+	color: $color;
 }
 
 /******************************************
@@ -66,6 +67,10 @@ body {
 /*******************************************/
 
 header {
+	position: fixed;
+	top:0;
+	left: 0;
+	right: 0;
 	width:100%;
 	background: $backgroundColor;
 	margin: 0 auto;
@@ -73,8 +78,8 @@ header {
 }
 
 footer {
-	background: $backgroundColor;
 	padding: 10px;
+	line-height: 1.3;
 }
 
 /******************************************
@@ -82,6 +87,7 @@ footer {
 /*******************************************/
 h1	{
 	font-size: 2em;
+	font-weight: 700;
 }
 
 nav {
@@ -90,56 +96,99 @@ nav {
 			width: 18%;
 			font-size: 1em;
 		}
+		li:last-child{
+				background: $backgroundColor*0.7;
+				border-radius: 5px;
+				padding:5px;
+				line-height: 1.3;
+
+		}
 		a {
 			text-decoration: none;
 		}
 		a:visited{
-			color:$primaryColor;
+			color:$color;
 		}
 		a:hover {
-			color: $hoverColor;
+			border-bottom: 5px solid $hoverColor;
 		}
+
 }
 
 .services {
 	section{
 		background: url(../../images/image_01.jpg); 
 		background-repeat:no-repeat;
+		margin-top: 120px;
 		@include responsive-bg-image(200px, 540px);
 		}
 	ul {
 		background: $backgroundColor*2;
+		width: 100%;
 		padding: 50px 0;
+
 		
 		li {
 			display: inline-block;
-			width: 19%;
+			vertical-align: top;
+			width: 15%;
+			height: 300px;
+			margin:10px;
+			padding: 20px;
+			border-radius: 5px;
+			background: $altBackground*0.7;
+			color: $color*2;
+			-webkit-box-shadow: 4px 4px 4px 2px $backgroundColor;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+ 			-moz-box-shadow:    4px 4px 4px 2px $backgroundColor;  /* Firefox 3.5 - 3.6 */
+  			box-shadow:         4px 4px 4px 2px $backgroundColor;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 		}
 	}
 }
 
+
 .reviews{
+	background:$altBackground;
 	li{
 		color: $backgroundColor;
 		display: inline-block;
+		vertical-align: top;
+		text-align: center;
 		width: 33.333%;
-		border: 5px solid $backgroundColor;
-		margin: 20px;
-		padding: 50px;
+
+		margin: 60px 20px;
 		border-radius: 20px;
+	}
+	div{
+		display: inline-block;
+		vertical-align: middle;
+		width:70%;
+		padding: 0 20px;
+		img{
+			max-width: 180px;
+			min-width: 50px;
+			padding-top: 20px;
+		}
+		p{
+			padding-top: 5px;
+		}
+	}
+	.icon{
+		display: inline-block;
+		width:25%;
+		img{
+			max-width: 110px;
+		}
 	}
 }
 
 #map {
 	text-align: justify;
 	margin: 0 auto;
-	height: 400px;
-	background:$backgroundColor;
+	height: 680px;
 }
 
 .btn{
 	float: left;
-	position: relative;
     background-color: $backgroundColor;
     padding: 6px 12px;
     line-height: 1.5;
@@ -155,6 +204,26 @@ nav {
 	float: right;
 }
 
-
+/******************************************
+/* MAP BOX                   
+/*******************************************/
 
 /**********************RESPONSIVE**********************/
+@media (min-width:923px) and (max-width:1371px){
+
+	.services{
+		section{
+			margin-top: 145px;
+		}
+	}
+
+}
+@media (min-width:400px) and (max-width:922px){
+
+	.services{
+		section{
+			margin-top: 165px;
+		}
+	}
+
+}
