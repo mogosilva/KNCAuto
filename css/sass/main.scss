@@ -106,7 +106,7 @@ nav {
 		a {
 			text-decoration: none;
 		}
-		a:visited{
+		a:visited, a:active{
 			color:$color;
 		}
 		a:hover {
