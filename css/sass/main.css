@@ -81,7 +81,7 @@ nav li:last-child {
   line-height: 1.3; }
 nav a {
   text-decoration: none; }
-nav a:visited {
+nav a:visited, nav a:active {
   color: #dbdde9; }
 nav a:hover {
   border-bottom: 5px solid #45b1f1; }
