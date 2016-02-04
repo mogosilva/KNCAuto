@@ -44,7 +44,7 @@ $altBackground: #d9e6ef;
 $hoverColor: #45b1f1;
 
 @mixin responsive-bg-image($image-height, $image-width) {
-  background-size: 100%;
+  background-size: cover;
   height: 0;
   padding-bottom: percentage($image-height / $image-width);
   display: block;
@@ -184,7 +184,7 @@ nav {
 #map {
 	text-align: justify;
 	margin: 0 auto;
-	height: 680px;
+	height: 580px;
 }
 
 .btn{

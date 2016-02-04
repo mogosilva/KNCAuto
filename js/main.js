@@ -6,11 +6,13 @@ function previousImage(){
 		i--;
 		console.log(i);
 		$(".services section").css("background","url(" + images[i] + ")");
+		$(".services section").css("background-size","cover");
 		
 	}else{
 		i=1;
 		console.log(i);
 		$(".services section").css("background","url(" + images[i] + ")");
+		$(".services section").css("background-size","cover");
 	}
 }
 function nextImage(){
@@ -20,10 +22,12 @@ function nextImage(){
 		i++;
 		console.log(i);
 		$(".services section").css("background","url(" + images[i] + ")");
+		$(".services section").css("background-size","cover");
 	}else{
 		i=0;
 		console.log(i);
 		$(".services section").css("background","url(" + images[i] + ")");
+		$(".services section").css("background-size","cover");
 	}
 }
 
