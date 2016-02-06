@@ -5,14 +5,14 @@ function previousImage(){
 	if(i<images.length && i>0){
 		i--;
 		console.log(i);
-		$(".services section").css("background","url(" + images[i] + ")");
-		$(".services section").css("background-size","cover");
+		$(".hero section").css("background","url(" + images[i] + ")");
+		$(".hero section").css("background-size","cover");
 		
 	}else{
 		i=1;
 		console.log(i);
-		$(".services section").css("background","url(" + images[i] + ")");
-		$(".services section").css("background-size","cover");
+		$(".hero section").css("background","url(" + images[i] + ")");
+		$(".hero section").css("background-size","cover");
 	}
 }
 function nextImage(){
@@ -21,13 +21,13 @@ function nextImage(){
 	if(i<images.length-1){
 		i++;
 		console.log(i);
-		$(".services section").css("background","url(" + images[i] + ")");
-		$(".services section").css("background-size","cover");
+		$(".hero section").css("background","url(" + images[i] + ")");
+		$(".hero section").css("background-size","cover");
 	}else{
 		i=0;
 		console.log(i);
-		$(".services section").css("background","url(" + images[i] + ")");
-		$(".services section").css("background-size","cover");
+		$(".hero section").css("background","url(" + images[i] + ")");
+		$(".hero section").css("background-size","cover");
 	}
 }
 
