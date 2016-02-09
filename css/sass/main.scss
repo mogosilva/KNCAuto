@@ -275,13 +275,15 @@ header{
 
 .reviews{
 	background:$backgroundColor;
+	padding-bottom: 150px;
 	h2{
 		margin-bottom: 0px;
+		padding-top: 150px;
 	}
 	li{
 		color: $altBackground;
 		display: inline-block;
-		vertical-align: top;
+		vertical-align: middle;
 		text-align: center;
 		width: 33.333%;
 
@@ -304,6 +306,7 @@ header{
 	}
 	.icon{
 		display: inline-block;
+		vertical-align: middle;
 		width:25%;
 		img{
 			max-width: 110px;
