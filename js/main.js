@@ -35,6 +35,38 @@ $(document).ready(function(){
 	$(".btn[value='>']").on("click",nextImage);
 	$(".btn[value='<']").on("click",previousImage);
 
+	$("#dealsLink").on("click",function(e){
+		 e.preventDefault();
+		$("body").animate({
+			scrollTop: $(".deals").offset().top - 115
+		},1000);
+		
+	});
+
+	$("#servicesLink").on("click",function(e){
+		 e.preventDefault();
+		$("body").animate({
+			scrollTop: $(".services").offset().top - 115
+		},1000);
+		
+	});
+
+	$("#reviewsLink").on("click",function(e){
+		 e.preventDefault();
+		$("body").animate({
+			scrollTop: $(".reviews").offset().top - 115
+		},1000);
+		
+	});
+
+	$("#locationLink").on("click",function(e){
+		 e.preventDefault();
+		$("body").animate({
+			scrollTop: $("#contact").offset().top - 115
+		},1000);
+		
+	});
+
 	//Code for MapBox
 	L.mapbox.accessToken = 'pk.eyJ1IjoibW9nb3NpbHZhIiwiYSI6ImNpanJrOHQxZjBicml1NG01eHRuYTJ2d3oifQ.KUmx-Iy2D73MnUkYFrXw3Q';
 

@@ -1,179 +1,175 @@
-<!doctype html>
-<head>
-	<meta charset="utf-8">
-	<title>K&amp;C's Auto Body</title>
-	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-	<script src='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.js'></script>
-	<link href='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet' />
-	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/sass/main.css">
-</head>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Car maintenance and auto body shop in Salem, MA">
+		<meta name="keywords" content="K and C autobody, autobody, cars, maintenance, KandC">
 
-<body>
-	<header>
+		<title>K&amp;C's Auto Body</title>
 
-	<nav>
-		<ul>		
-			<li><h1>K&amp;C's Auto Body</h1></li>
-			<li><a href="#">DEALS</a></li>
-			<li><a href="#">SERVICES</a></li>
-			<li><a href="#">REVIEWS</a></li>
-			<li><a href="#">LOCATION</a></li>
-			<li>
-				<p>17 Franklin St. Salem, MA, 01970</p>
-				<p>Shop: (978) 744-3985</p>
-				<p>Cell: (978) 590-3317</p>
-			</li>			
-		</ul>
-	</nav>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/sass/main.css">
 
-	</header>
+		<!-- Mapbox/GoogleMaps -->
+		<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+		<script src='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.js'></script>
+		<link href='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet' />
+		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
+	</head>
 
-	<div class = "hero">
+	<body>
+		<header>
+			<nav>
+				<ul>		
+					<li><h1>K&amp;C's Auto Body</h1></li>
+					<li id="dealsLink"><a href="#">DEALS</a></li>
+					<li id="servicesLink"><a href="#">SERVICES</a></li>
+					<li id="reviewsLink"><a href="#">REVIEWS</a></li>
+					<li id="locationLink"><a href="#">LOCATION</a></li>
+					<li>
+						<p>17 Franklin St. Salem, MA, 01970</p>
+						<p>Shop: (978) 744-3985</p>
+						<p>Cell: (978) 590-3317</p>
+					</li>			
+				</ul>
+			</nav>
+		</header>
 
-		<section class="hero">
-			<input type="button" class="btn" value="<">
-			<input type="button" class="btn" value=">">
-		</section>
+		<div class = "hero">
+			<section class="hero">
+				<input type="button" class="btn" value="<">
+				<input type="button" class="btn" value=">">
+			</section>
+		</div>
 
-	</div>
-
-	<div class = "deals">
-
-		<h2>DEALS</h2>
-
-		<ul>
-			<li>
-				<img src="images/studentID.png" alt="student ID">
-				<div>
-					<h3><strong>College Students</strong></h3>
-					<p>10% Discount with student ID</p>
-				</div>
-			</li>
-			<li>
-				<img src="images/carDetail.png" alt="car shine">
-				<div>
-					<h3><strong>Spend $1000 or more</strong></h3>
-					<p>Receive a free detail</p>
-				</div>
-			</li>
-		</ul>
-
-
-	</div>
-
-	<div class = "services">
-		<img src="images/serviceMarker.png" alt="page marker">
-		<h2>PROVIDING OUR SERVICES FOR OVER 40 YEARS</h2>
-		<nav>
-			<ul class="clearfix category">
-				<li class = "subcategory">
-					<article>
-							<img src="images/plus.png">
-							<h3>INSTALLATION</h3>
-						<ul>
-							<li>Upholstery</li>
-							<li>Alarms</li>
-						</ul>
-					</article>
+		<div class = "deals">
+			<h2>DEALS</h2>
+			<ul>
+				<li>
+					<img src="images/studentID.png" alt="student ID">
+					<div>
+						<h3><strong>College Students</strong></h3>
+						<p>10% Discount with student ID</p>
+					</div>
 				</li>
-
-				<li class = "subcategory">
-					<article>
-						<img src="images/repairIcon.png">
-						<h3>REPAIR</h3>
-						<ul>
-							<li>Dents</li>
-							<li>Collisions</li>
-							<li>Unibody Straightening</li>
-						</ul>
-					</article>
-				</li>
-
-				<li class = "subcategory">
-					<article>
-							<img src="images/carPaintIcon.png">
-							<h3>PAINTING</h3>
-						<ul>
-							<li>Window Tinting</li>
-							<li>Paint Matching</li>
-						</ul>
-					</article>
+				<li>
+					<img src="images/carDetail.png" alt="car shine">
+					<div>
+						<h3><strong>Spend $1000 or more</strong></h3>
+						<p>Receive a free detail</p>
+					</div>
 				</li>
 			</ul>
-		</nav>
-	</div>
-	<div class="brands">
-		<img class= "marker" src="images/paintMarker.png">
-		<p>WORKING ON OUR CRAFT AND SPECIALIZING IN THE FOLLOWING MAKES</p>
-		<ul class="clearfix">
-			<li><img src="images/nissan.png"></li>
-			<li><img src="images/audi.png"></li>
-			<li><img src="images/honda.png"></li>
-			<li><img src="images/toyota.png"></li>
-		</ul>
-	</div>
+		</div>
 
-	<div class="paint">
-		<img src="images/sh.png" alt="Spies Hecker">
-		<p>In order to provide our customers with paint that won’t wear,</p>
-		<p> we are proud to use Spies Hecker high-end paint on all vehicles</p>
-	</div>
+		<div class = "services">
+			<img src="images/serviceMarker.png" alt="page marker">
+			<h2>PROVIDING OUR SERVICES FOR OVER 40 YEARS</h2>
+			<nav>
+				<ul class="clearfix category">
+					<li class = "subcategory">
+						<article>
+								<img src="images/plus.png">
+								<h3>INSTALLATION</h3>
+							<ul>
+								<li>Upholstery</li>
+							</ul>
+						</article>
+					</li>
+					<li class = "subcategory">
+						<article>
+							<img src="images/repairIcon.png">
+							<h3>REPAIR</h3>
+							<ul>
+								<li>Dents</li>
+								<li>Collisions</li>
+								<li>Unibody Straightening</li>
+							</ul>
+						</article>
+					</li>
+					<li class = "subcategory">
+						<article>
+							<img src="images/carPaintIcon.png">
+							<h3>PAINTING</h3>
+							<ul>
+								<li>Paint Matching</li>
+							</ul>
+						</article>
+					</li>
+				</ul>
+			</nav>
+		</div>
 
-	<section class="reviews">
+		<div class="brands">
+			<img class= "marker" src="images/paintMarker.png">
+			<p>WORKING ON OUR CRAFT AND SPECIALIZING IN THE FOLLOWING MAKES</p>
+			<ul class="clearfix">
+				<li><img src="images/nissan.png"></li>
+				<li><img src="images/audi.png"></li>
+				<li><img src="images/honda.png"></li>
+				<li><img src="images/toyota.png"></li>
+			</ul>
+		</div>
 
-		<h2>REVIEWS</h2>
+		<div class="paint">
+			<img src="images/sh.png" alt="Spies Hecker">
+			<p>In order to provide our customers with paint that won’t wear,</p>
+			<p> we are proud to use the best in German High-End paint, <strong>Spies Hecker</strong> on all vehicles</p>
+		</div>
 
-		<ul>
-			<li>
-				<div class="icon"><a href="http://www.yelp.com/biz/k-and-cs-auto-body-salem"><img src="images/yelpIcon.png"></a></div>
-				<div>
-					<img src="images/stars.png">
-					<p>"...the work is immaculate and he did MORE than he quoted me..."</p>
-					<img src="images/stars.png">
-					<p>"I was impressed how fast this body shop was able to order a part for my hummer 3 and how fast the work was done..."</p>
-				</div>
-			</li>
-			<li>
-				<div class="icon"><a href="#"><img src="images/angiesIcon.png"></a></div>
-				<div>
-					<img src="images/stars.png">
-					<p>"...the work is immaculate and he did MORE than he quoted me..."</p>
-					<img src="images/stars.png">
-					<p>"I was impressed how fast this body shop was able to order a part for my hummer 3 and how fast the work was done..."</p>
-				</div>
-			</li>
-			<li>
-				<div class="icon"><a href="http://www.yellowpages.com/salem-ma/mip/k-cs-auto-body-3764849?lid=3764849"><img src="images/yellowPagesIcon.png"></a></div>
-				<div>
-					<img src="images/stars.png">
-					<p>"the best costumer service in the area..."</p>
-					<img src="images/stars.png">
-					<p>"I was impressed how fast this body shop was able to order a part for my hummer 3 and how fast the work was done..."</p>
-				</div>
-			</li>
-			<li>
-				<div class="icon"><a href="https://plus.google.com/109059233710506536786/about"><img src="images/googlePlusIcon.png"></a></div>
-				<div>
-					<img src="images/stars.png">
-					<p>"The service was excellent - fast, and my mirror was well assembled."</p>
-					<img src="images/stars.png">
-					<p>"Paolo is upfront and honest."</p>
-				</div>
-			</li>
-		</ul>	
-	</section>
+		<section class="reviews">
+			<h2>REVIEWS</h2>
+			<ul>
+				<li>
+					<div class="icon"><a href="https://plus.google.com/109059233710506536786/about"><img src="images/googlePlusIcon.png"></a></div>
+					<div>
+						<img src="images/stars.png">
+						<p>"The service was excellent - fast, and my mirror was well assembled."</p>
+						<img src="images/stars.png">
+						<p>"Paolo is upfront and honest."</p>
+					</div>
+				</li>
+				<li>
+					<div class="icon"><a href="#"><img src="images/angiesIcon.png"></a></div>
+					<div>
+						<img src="images/stars.png">
+						<p>"...the work is immaculate and he did MORE than he quoted me..."</p>
+						<img src="images/stars.png">
+						<p>"I was impressed how fast this body shop was able to order a part for my hummer 3 and how fast the work was done..."</p>
+					</div>
+				</li>
+				<li>
+					<div class="icon"><a href="http://www.yellowpages.com/salem-ma/mip/k-cs-auto-body-3764849?lid=3764849"><img src="images/yellowPagesIcon.png"></a></div>
+					<div>
+						<img src="images/stars.png">
+						<p>"the best costumer service in the area..."</p>
+						<img src="images/stars.png">
+						<p>"I was impressed how fast this body shop was able to order a part for my hummer 3 and how fast the work was done..."</p>
+					</div>
+				</li>
+				<li>
+					<div class="icon"><a href="http://www.yelp.com/biz/k-and-cs-auto-body-salem"><img src="images/yelpIcon.png"></a></div>
+					<div>
+						<img src="images/stars.png">
+						<p>"...the work is immaculate and he did MORE than he quoted me..."</p>
+						<img src="images/stars.png">
+						<p>"I was impressed how fast this body shop was able to order a part for my hummer 3 and how fast the work was done..."</p>
+					</div>
+				</li>
+			</ul>	
+		</section>
 
-	<div id = "contact">
-	<div id="map"></div>
+		<div id = "contact">
+		<div id="map"></div>
 
-	<footer class = "clear">
-	<h3>17 Franklin St. Salem, MA, 01970</h3>
-	<h3>k_Cauto@hotmail.com</h3>
-	<h3>Shop: (978) 744-3985</h3>
-	<h3>Cell: (978) 590-3317</h3>
-	</footer>
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script src="js/main.js"></script>
-</body>
+		<footer class = "clear">
+			<h3>17 Franklin St. Salem, MA, 01970</h3>
+			<h3>k_Cauto@hotmail.com</h3>
+			<h3>Shop: (978) 744-3985</h3>
+			<h3>Cell: (978) 590-3317</h3>
+		</footer>
+
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

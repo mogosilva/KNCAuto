@@ -130,7 +130,8 @@ header{
 			color:$color;
 		}
 		a:hover {
-			border-bottom: 5px solid $hoverColor;
+			border-bottom: 7px solid $hoverColor;
+			padding-bottom: 11px;
 		}
 	}
 }
@@ -344,6 +345,12 @@ header{
 	float: right;
 }
 
+footer{
+	h3{
+		font-size: 1em;
+		font-weight: 500;
+	}
+}
 /******************************************
 /* MAP BOX                   
 /*******************************************/
