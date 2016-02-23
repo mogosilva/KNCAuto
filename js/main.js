@@ -38,7 +38,7 @@ $(document).ready(function(){
 	$("#dealsLink").on("click",function(e){
 		 e.preventDefault();
 		$("body").animate({
-			scrollTop: $(".deals").offset().top - 115
+			scrollTop: $(".deals").offset().top - 140
 		},1000);
 		
 	});
@@ -46,7 +46,7 @@ $(document).ready(function(){
 	$("#servicesLink").on("click",function(e){
 		 e.preventDefault();
 		$("body").animate({
-			scrollTop: $(".services").offset().top - 115
+			scrollTop: $(".services").offset().top - 140
 		},1000);
 		
 	});
@@ -54,7 +54,7 @@ $(document).ready(function(){
 	$("#reviewsLink").on("click",function(e){
 		 e.preventDefault();
 		$("body").animate({
-			scrollTop: $(".reviews").offset().top - 115
+			scrollTop: $(".reviews").offset().top - 140
 		},1000);
 		
 	});
@@ -62,7 +62,7 @@ $(document).ready(function(){
 	$("#locationLink").on("click",function(e){
 		 e.preventDefault();
 		$("body").animate({
-			scrollTop: $("#contact").offset().top - 115
+			scrollTop: $("#contact").offset().top - 140
 		},1000);
 		
 	});

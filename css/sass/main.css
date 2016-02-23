@@ -66,20 +66,17 @@ footer {
 /******************************************
 /* ADDITIONAL STYLES                   
 /*******************************************/
-h1 {
+h1, h2, h3 {
   font-size: 2em;
   font-weight: 700; }
 
 h2 {
-  font-size: 2em;
-  font-weight: 700;
   text-align: left;
   margin: 0px 0 60px 200px;
   padding-top: 50px; }
 
 h3 {
-  font-size: 1.4em;
-  font-weight: 700; }
+  font-size: 1.4em; }
 
 header nav li {
   display: inline-block;
@@ -92,10 +89,11 @@ header nav li:first-child {
 header nav li:last-child {
   background: #1f3782;
   border-radius: 5px;
-  padding: 5px;
+  padding: 5px 0 5px 10px;
   line-height: 1.3;
   width: 20%;
-  margin-left: 100px; }
+  margin-left: 100px;
+  text-align: left; }
 header nav a {
   color: #fff;
   text-decoration: none; }
@@ -132,9 +130,7 @@ header nav a:hover {
   .deals div {
     display: inline-block; }
     .deals div h3 {
-      text-align: left;
-      font-size: 1.5em;
-      font-weight: 700; }
+      text-align: left; }
     .deals div p {
       text-align: left;
       margin-top: 5px;
@@ -174,39 +170,33 @@ header nav a:hover {
     vertical-align: middle;
     max-width: 20%; }
 
-/*******BRANDS*********/
-.marker {
-  float: left;
-  width: 20%; }
-
-.brands {
-  background: #cccccc;
-  color: #4d4d4d;
-  padding-top: 50px; }
-  .brands p {
-    padding-bottom: 20px; }
-  .brands ul {
-    background: #666666;
-    padding-top: 30px; }
-    .brands ul li {
-      display: inline-block;
-      width: 13%; }
-    .brands ul img {
-      max-width: 150px;
-      display: inline-block;
-      vertical-align: middle; }
-
-/*******PAINT*********/
-.paint {
-  background: #fff;
-  padding: 50px 0; }
-  .paint img {
-    vertical-align: middle;
-    display: inline-block;
-    width: 18%; }
-  .paint p {
-    display: inline-block;
+/*******SPECIALTY*********/
+.specialty {
+  background: #C6CCCE; }
+  .specialty article {
+    margin-top: 5px;
+    background: url(../../images/servicesBackground.png);
+    background-size: cover;
+    text-align: left;
+    background-size: cover;
+    height: 0;
+    padding-bottom: 10.10101%;
+    display: block; }
+  .specialty .one {
+    float: left;
+    width: 50%;
+    text-align: center; }
+  .specialty section {
+    padding-top: 40px;
+    float: left;
+    width: 50%;
     color: black; }
+    .specialty section h2 {
+      text-align: left;
+      margin: 0px;
+      padding: 0px; }
+    .specialty section p {
+      max-width: 500px; }
 
 /*******REVIEWS********/
 .reviews {
@@ -214,7 +204,7 @@ header nav a:hover {
   padding-bottom: 150px; }
   .reviews h2 {
     margin-bottom: 0px;
-    padding-top: 150px; }
+    padding-top: 100px; }
   .reviews li {
     color: #fff;
     display: inline-block;
@@ -267,9 +257,19 @@ header nav a:hover {
   margin: 250px 20px 0 0;
   float: right; }
 
-footer h3 {
-  font-size: 1em;
-  font-weight: 500; }
+footer {
+  text-align: left; }
+  footer section {
+    margin-right: 50px;
+    float: right; }
+  footer h3 {
+    font-size: 1em;
+    font-weight: 500; }
+  footer img {
+    margin: 5px 0 0 20px;
+    display: inline-block;
+    max-width: 50px;
+    float: left; }
 
 /******************************************
 /* MAP BOX                   
