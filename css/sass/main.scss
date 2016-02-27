@@ -95,8 +95,9 @@ h2{
 	margin: 0px 0 60px 200px;
 	padding-top: 50px;
 }
-h3{
+h3, h4{
 	font-size: 1.4em;
+	font-weight: 700;
 }
 header{
 	nav {
@@ -193,10 +194,15 @@ header{
 		margin: 0px;
 		padding-top: 80px;
 	}
-	h3{
+	h3, h4{
 		display: inline-block;
-		vertical-align: middle;
+		vertical-align: bottom;
 		margin-left: 5px;
+		border-top: 8px solid #fff;
+		padding-top: 10px;
+	}
+	h4{
+		border: none;
 	}
 }
 .category{
@@ -206,7 +212,7 @@ header{
 
 	li:first-child {
 		img{
-			max-width: 12%;
+			max-width: 13.5%;
 		}		
 	}
 }
@@ -219,42 +225,67 @@ header{
 
 	}
 	ul{
-		margin-top: 50px;
+		margin-top: 30px;
 		line-height: 2;
 	}
 	img{
-		vertical-align: middle;
-		max-width: 20%;
+		display: block;
+		margin: 0 auto;
+		padding-bottom: 15px;
 	}
 }
 /*******SPECIALTY*********/
 .specialty{
 	background: #C6CCCE;
 	article{
-		margin-top: 5px;
-		background: url(../../images/servicesBackground.png);
-		background-size: cover;
 		text-align: left;
-		@include responsive-bg-image(110px, 1089px);
+		margin-bottom: 40px;
 	}
-	.one{
-		float: left;
-		width: 50%;
-		text-align: center;
+	article:last-child{
+		margin-bottom: 0px;
 	}
 	section{
-		padding-top: 40px;
-		float: left;
-		width: 50%;
-		color: black;	
+		float: right;
+		height: 140px;
+		width: 60%;
+		color: black;
+		background: white;
+		padding: 15px 0 0 10px;	
 		h2{
 			text-align: left;
 			margin: 0px;
 			padding: 0px;
 		}
 		p{
+			margin-top: 5px;
 			max-width: 500px;
 		}
+	}
+	.rightAngleTriangle{
+		height: 0;
+		width: 0;
+		border-bottom: 140px solid white;
+		border-left: 120px solid transparent;
+		background: none;
+		padding:0px;
+	}
+	.leftAngleTriangle{
+		float: left;
+		height: 0;
+		width: 0;
+		border-top: 140px solid white;
+		border-right: 120px solid transparent;
+		background: none;
+		padding:0px;
+	}
+	img{
+		float: left;
+		background: white;
+		height: 140px;
+		padding: 12px 0;
+	}
+	.rightAngleTriangle:nth-of-type(2n){
+		float: left;
 	}
 }
 /*******REVIEWS********/
