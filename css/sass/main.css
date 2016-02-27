@@ -75,8 +75,9 @@ h2 {
   margin: 0px 0 60px 200px;
   padding-top: 50px; }
 
-h3 {
-  font-size: 1.4em; }
+h3, h4 {
+  font-size: 1.4em;
+  font-weight: 700; }
 
 header nav li {
   display: inline-block;
@@ -146,16 +147,20 @@ header nav a:hover {
     text-align: center;
     margin: 0px;
     padding-top: 80px; }
-  .services h3 {
+  .services h3, .services h4 {
     display: inline-block;
-    vertical-align: middle;
-    margin-left: 5px; }
+    vertical-align: bottom;
+    margin-left: 5px;
+    border-top: 8px solid #fff;
+    padding-top: 10px; }
+  .services h4 {
+    border: none; }
 
 .category {
   width: 100%;
   padding: 120px 0; }
   .category li:first-child img {
-    max-width: 12%; }
+    max-width: 13.5%; }
 
 .subcategory {
   vertical-align: top;
@@ -164,39 +169,57 @@ header nav a:hover {
   .subcategory li {
     font-size: 1.3em; }
   .subcategory ul {
-    margin-top: 50px;
+    margin-top: 30px;
     line-height: 2; }
   .subcategory img {
-    vertical-align: middle;
-    max-width: 20%; }
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 15px; }
 
 /*******SPECIALTY*********/
 .specialty {
   background: #C6CCCE; }
   .specialty article {
-    margin-top: 5px;
-    background: url(../../images/servicesBackground.png);
-    background-size: cover;
     text-align: left;
-    background-size: cover;
-    height: 0;
-    padding-bottom: 10.10101%;
-    display: block; }
-  .specialty .one {
-    float: left;
-    width: 50%;
-    text-align: center; }
+    margin-bottom: 40px; }
+  .specialty article:last-child {
+    margin-bottom: 0px; }
   .specialty section {
-    padding-top: 40px;
-    float: left;
-    width: 50%;
-    color: black; }
+    float: right;
+    height: 140px;
+    width: 60%;
+    color: black;
+    background: white;
+    padding: 15px 0 0 10px; }
     .specialty section h2 {
       text-align: left;
       margin: 0px;
       padding: 0px; }
     .specialty section p {
+      margin-top: 5px;
       max-width: 500px; }
+  .specialty .rightAngleTriangle {
+    height: 0;
+    width: 0;
+    border-bottom: 140px solid white;
+    border-left: 120px solid transparent;
+    background: none;
+    padding: 0px; }
+  .specialty .leftAngleTriangle {
+    float: left;
+    height: 0;
+    width: 0;
+    border-top: 140px solid white;
+    border-right: 120px solid transparent;
+    background: none;
+    padding: 0px; }
+  .specialty img {
+    float: left;
+    background: white;
+    height: 140px;
+    padding: 12px 0; }
+  .specialty .rightAngleTriangle:nth-of-type(2n) {
+    float: left; }
 
 /*******REVIEWS********/
 .reviews {
