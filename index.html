@@ -8,6 +8,7 @@
 		<title>K&amp;C's Auto Body</title>
 
 		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
 		<link rel="stylesheet" href="css/sass/main.css">
 
 		<!-- Mapbox/GoogleMaps -->
@@ -29,8 +30,7 @@
 					<li>
 						<p>17 Franklin St. Salem, MA, 01970</p>
 						<p>(978) 744-3985</p>
-						<p>Monday - Friday: 8am - 5pm</p>
-						<p>Saturday: 8am - 1pm</p>
+						<p>k_Cauto@hotmail.com</p>
 					</li>			
 				</ul>
 			</nav>
@@ -96,43 +96,58 @@
 
 		<div class="specialty clearfix">
 			<article class= "clearfix">
-				<section>
-					<h2>WE USE THE BEST PAINT</h2>
-					<p>In order to provide our customers with paint that won’t wear, we are proud to use Spies Hecker, the best in high-end paint on all vehicles.</p>
-				</section>
-				<section class="rightAngleTriangle"></section>
-				<section class="rightAngleTriangle"></section>
-				<img src="images/sh.png">
-				<section class="leftAngleTriangle"></section>
+				<div id="spiesHeckerInfo" class="rightSlide">
+					<section>
+						<h2>WE USE THE BEST PAINT</h2>
+						<p>In order to provide our customers with paint that won’t wear, we are proud to use Spies Hecker, the best in high-end paint on all vehicles.</p>
+					</section>
+					<section class="rightAngleTriangle"></section>
+				</div>
+				
+				<div id="spiesHecker" class= "clearfix leftSlide">
+					<section class="rightAngleTriangle"></section>
+					<img src="images/sh.png">
+					<section class="leftAngleTriangle"></section>
+				</div>
 			</article>
 
 			<article class= "clearfix">
-				<section>
-					<h2>ON-SITE RENTAL CARS</h2>
-					<p>Don't delay the rest of your day, we have rental cars on site so that you can continue with your day while you wait on your car to be fixed.</p>
-				</section>
-				<section class="rightAngleTriangle"></section>
-				<section class="rightAngleTriangle"></section>
-				<img src="images/carServices.png">
-				<section class="leftAngleTriangle"></section>
+				<div id="carServicesInfo" class="rightSlide">
+					<section>
+						<h2>ON-SITE RENTAL CARS</h2>
+						<p>Don't delay the rest of your day, we have rental cars on site so that you can continue with your day while you wait on your car to be fixed.</p>
+					</section>
+					<section class="rightAngleTriangle"></section>
+				</div>
+
+				<div id="carServices" class= "clearfix leftSlide">
+					<section class="rightAngleTriangle"></section>
+					<img src="images/carServices.png">
+					<section class="leftAngleTriangle"></section>
+				</div>
 			</article>
 
 			<article class= "clearfix">
-				<section>
-					<h2>OEM PARTS</h2>
-					<p>We do our best to use OEM (Original Equipment Manufacturer) parts and work out the difference with you even if your issurance doesn't provide them.</p>
-				</section>
-				<section class="rightAngleTriangle"></section>
-				<section class="rightAngleTriangle"></section>
-				<img src="images/gearsServices.png">
-				<section class="leftAngleTriangle"></section>
+				<div id="gearsServicesInfo" class="clearfix rightSlide">
+					<section>
+						<h2>OEM PARTS</h2>
+						<p>We do our best to use OEM (Original Equipment Manufacturer) parts and work out the difference with you even if your issurance doesn't provide them.</p>
+					</section>
+					<section class="rightAngleTriangle"></section>
+				</div>
+
+				<div id="gearsServices" class= "clearfix leftSlide">
+					<section class="rightAngleTriangle"></section>
+					<img src="images/gearsServices.png">
+					<section class="leftAngleTriangle"></section>
+				</div>
 			</article>
 		</div>
 
 		<section class="reviews clear">
 			<h2>REVIEWS</h2>
 			<ul>
-				<li>
+				<li id="google">
 					<div class="icon"><a href="https://plus.google.com/109059233710506536786/about"><img src="images/googlePlusIcon.png"></a></div>
 					<div>
 						<img src="images/stars.png">
@@ -141,7 +156,7 @@
 						<p>"Paolo is upfront and honest."</p>
 					</div>
 				</li>
-				<li>
+				<li id="angie">
 					<div class="icon"><a href="#"><img src="images/angiesIcon.png"></a></div>
 					<div>
 						<img src="images/stars.png">
@@ -150,7 +165,7 @@
 						<p>"I was impressed how fast this body shop was able to order a part for my hummer 3 and how fast the work was done..."</p>
 					</div>
 				</li>
-				<li>
+				<li id="yellowPages">
 					<div class="icon"><a href="http://www.yellowpages.com/salem-ma/mip/k-cs-auto-body-3764849?lid=3764849"><img src="images/yellowPagesIcon.png"></a></div>
 					<div>
 						<img src="images/stars.png">
@@ -159,7 +174,7 @@
 						<p>"I was impressed how fast this body shop was able to order a part for my hummer 3 and how fast the work was done..."</p>
 					</div>
 				</li>
-				<li>
+				<li id="yelp">
 					<div class="icon"><a href="http://www.yelp.com/biz/k-and-cs-auto-body-salem"><img src="images/yelpIcon.png"></a></div>
 					<div>
 						<img src="images/stars.png">
@@ -171,13 +186,31 @@
 			</ul>	
 		</section>
 
-		<div id = "contact">
-		<div id="map"></div>
+		<div id = "contact" class="clearfix">
+			<div id="map"></div>
+			<section>
+				<h3>LOCATION</h3>
+				<p>17 Franklin St.</p>
+				<p>Salem, MA, 01970</p>
+			</section>
+			<section id="hours">
+				<h3>HOURS</h3>
+				<div id="days">
+					<p>Monday - Friday</p>
+					<p>Saturday</p>
+				</div>
+				<div id="time">
+					<p>8am - 5pm</p>
+					<p>8am - 1pm</p>
+				</div>
+			</section>
+			
+
+		</div>
 
 		<footer class = "clearfix">
 			<a href="https://www.facebook.com/kncauto/?fref=ts"><img src="images/facebook.png"></a>
 			<section>
-				<h3>17 Franklin St. Salem, MA, 01970</h3>
 				<h3>k_Cauto@hotmail.com</h3>
 				<h3>(978) 744-3985</h3>
 			</section>
