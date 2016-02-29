@@ -75,7 +75,9 @@ header {
 	width:100%;
 	background: $backgroundColor;
 	margin: 0 auto;
-	padding: 20px 0;
+	padding-top: 20px;
+	z-index: 100;
+
 }
 
 footer {
@@ -106,11 +108,19 @@ header{
 			width: 10%;
 			font-size: 1em;
 			vertical-align: bottom;
+			padding-bottom: 20px;
+			transition:border-bottom 0.3s ease-in-out;
+			border-bottom: 7px solid transparent;
 
+		}
+		li:hover{
+		border-bottom: 7px solid $hoverColor;
 		}
 		li:first-child{
 			width: 20%;
 			margin-right: 100px;
+			border-bottom:none;
+			padding-bottom: none;
 		}
 		li:last-child{
 				background: $backgroundColor*0.7;
@@ -120,18 +130,17 @@ header{
 				width: 20%;
 				margin-left: 100px;
 				text-align: left;
+				border-bottom:none;
+				margin-bottom: 10px;
 
 		}
 		a {
 			color: $color;
 			text-decoration: none;
+		
 		}
 		a:visited, a:active{
 			color:$color;
-		}
-		a:hover {
-			border-bottom: 7px solid $hoverColor;
-			padding-bottom: 11px;
 		}
 	}
 }
@@ -143,7 +152,7 @@ header{
 	section{
 		background: url(../../images/image_01.jpg); 
 		background-repeat:no-repeat;
-		margin-top: 120px;
+		margin-top: 108px;
 		@include responsive-bg-image(200px, 540px);
 	}
 }
@@ -197,7 +206,6 @@ header{
 	h3, h4{
 		display: inline-block;
 		vertical-align: bottom;
-		margin-left: 5px;
 		border-top: 8px solid #fff;
 		padding-top: 10px;
 	}
@@ -236,10 +244,25 @@ header{
 }
 /*******SPECIALTY*********/
 .specialty{
-	background: #C6CCCE;
+	background: linear-gradient(0deg,$color*0.7, $color*0.8);;
 	article{
 		text-align: left;
 		margin-bottom: 40px;
+		.rightSlide{
+			-webkit-animation-duration: 1.2s;
+			float: right;
+			width: 70%;
+		}
+		.leftSlide{
+			-webkit-animation-duration: 1.2s;
+			float: left;
+			width: 30%;
+			padding-left: 20px;
+
+			.rightAngleTriangle{
+				float: left;
+			}
+		}
 	}
 	article:last-child{
 		margin-bottom: 0px;
@@ -247,7 +270,7 @@ header{
 	section{
 		float: right;
 		height: 140px;
-		width: 60%;
+		width: 85%;
 		color: black;
 		background: white;
 		padding: 15px 0 0 10px;	
@@ -284,14 +307,12 @@ header{
 		height: 140px;
 		padding: 12px 0;
 	}
-	.rightAngleTriangle:nth-of-type(2n){
-		float: left;
-	}
+
 }
 /*******REVIEWS********/
 
 .reviews{
-	background:$backgroundColor;
+	background:$backgroundColor*0.3;
 	padding-bottom: 150px;
 	h2{
 		margin-bottom: 0px;
@@ -303,9 +324,9 @@ header{
 		vertical-align: middle;
 		text-align: center;
 		width: 33.333%;
-
 		margin: 60px 20px;
 		border-radius: 20px;
+		-webkit-animation-duration: 4s;
 	}
 	div{
 		display: inline-block;
@@ -330,16 +351,42 @@ header{
 		}
 	}
 }
+/********CONTACT*********/
 
+#contact{
+	padding: 50px 170px;
+	line-height: 1.9em;
+	section{
+		float: left;
+		width: 50%;
+		margin-bottom: 50px;
+		h3{
+			margin-bottom: 20px;
+			font-size: 1.6em;
+		}
+		p{
+			font-size: 1.2em;
+		}
+	}
+	#hours{
+		padding: 0 40px;
+		div{
+			float: left;
+			width: 50%;
+		}
+	}
+}
 
 /********MAP*********/
 
 #map {
 	text-align: justify;
 	margin: 0 auto;
-	height: 580px;
+	height: 440px;
+	width:100%;
+	margin-bottom:50px;
 }
-
+/********CONTACT*********/
 .btn{
 	margin: 250px 0 0 20px;
 	float: left;
@@ -362,6 +409,8 @@ header{
 }
 
 footer{
+	background: #fff;
+	color: $backgroundColor;
 	text-align: left;
 	section{
 		margin-right: 50px;

@@ -67,6 +67,44 @@ $(document).ready(function(){
 		
 	});
 
+	window.setInterval(function(){
+  		 nextImage();
+	}, 5000);
+
+	$(window).scroll(function () {
+		var pageLocation = $(window).scrollTop() + $(window).height();
+		var animFade="animated fadeIn";
+		var animSlideLeft ="animated slideInLeft";
+		var animSlideRight = "animated slideInRight";
+
+   		if (pageLocation > $('#google').offset().top) {
+        	$("#google").addClass(animFade);
+    	}
+    	if (pageLocation > $('#angie').offset().top) {
+        	$("#angie").addClass(animFade);
+    	}
+    	if (pageLocation > $('#yellowPages').offset().top) {
+       		$("#yellowPages").addClass(animFade);
+    	}
+    	if (pageLocation > $('#yelp').offset().top) {
+        	$("#yelp").addClass(animFade);
+    	}
+    	if (pageLocation > $('#spiesHecker').offset().top) {
+    		$("#spiesHecker").addClass(animSlideLeft);
+    		$("#spiesHeckerInfo").addClass(animSlideRight);
+    	}
+    	if (pageLocation > $('#carServices').offset().top) {
+    		$("#carServices").addClass(animSlideLeft);
+    		$("#carServicesInfo").addClass(animSlideRight);
+    	}
+    	if (pageLocation > $('#gearsServices').offset().top) {
+    		$("#gearsServices").addClass(animSlideLeft);
+    		$("#gearsServicesInfo").addClass(animSlideRight);
+    	}
+	});
+
+
+
 	//Code for MapBox
 	L.mapbox.accessToken = 'pk.eyJ1IjoibW9nb3NpbHZhIiwiYSI6ImNpanJrOHQxZjBicml1NG01eHRuYTJ2d3oifQ.KUmx-Iy2D73MnUkYFrXw3Q';
 
