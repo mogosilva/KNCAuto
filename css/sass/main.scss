@@ -1,3 +1,7 @@
+/*******FONT***********/
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
 /******************************************
 /* SETUP                   
 /*******************************************/
@@ -55,8 +59,8 @@ $hoverColor: #45b1f1;
 /* BASE STYLES                   
 /*******************************************/
 body {
-	font-size: 18px;
-	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	background: $backgroundColor;
 	text-align: center;
@@ -152,7 +156,7 @@ header{
 	section{
 		background: url(../../images/image_01.jpg); 
 		background-repeat:no-repeat;
-		margin-top: 108px;
+		margin-top: 100px;
 		@include responsive-bg-image(200px, 540px);
 	}
 }
