@@ -114,6 +114,9 @@ header{
 			vertical-align: bottom;
 			padding-bottom: 20px;
 			transition:border-bottom 0.3s ease-in-out;
+			-webkit-transition:border-bottom 0.3s ease-in-out;
+			-moz-transition:border-bottom 0.3s ease-in-out;
+			-o-transition:border-bottom 0.3s ease-in-out;
 			border-bottom: 7px solid transparent;
 
 		}
@@ -191,6 +194,7 @@ header{
 			font-size: 1.2em;
 		}
 	}
+
 }
 
 
@@ -236,9 +240,15 @@ header{
 		font-size: 1.3em;
 
 	}
+	h3{
+		margin-bottom: 30px;
+	}
 	ul{
-		margin-top: 30px;
 		line-height: 2;
+		-webkit-animation-duration: 3s;
+		-moz-animation-duration: 3s;
+		-ms-animation-duration: 3s;
+		-o-animation-duration: 3s;
 	}
 	img{
 		display: block;
@@ -253,12 +263,18 @@ header{
 		text-align: left;
 		margin-bottom: 40px;
 		.rightSlide{
-			-webkit-animation-duration: 1.2s;
+			-webkit-animation-duration: 2s;
+			-moz-animation-duration: 2s;
+			-ms-animation-duration: 2s;
+			-o-animation-duration: 2s;
 			float: right;
 			width: 70%;
 		}
 		.leftSlide{
-			-webkit-animation-duration: 1.2s;
+			-webkit-animation-duration: 1.5s;
+			-moz-animation-duration: 1.5s;
+			-ms-animation-duration: 1.5s;
+			-o-animation-duration: 1.5s;
 			float: left;
 			width: 30%;
 			padding-left: 20px;
@@ -331,6 +347,9 @@ header{
 		margin: 60px 20px;
 		border-radius: 20px;
 		-webkit-animation-duration: 4s;
+		-moz-animation-duration: 4s;
+		-ms-animation-duration: 4s;
+		-o-animation-duration: 4s;
 	}
 	div{
 		display: inline-block;
@@ -389,6 +408,10 @@ header{
 	height: 440px;
 	width:100%;
 	margin-bottom:50px;
+	color:#000;
+	strong{
+		font-weight: 500;
+	}
 }
 /********CONTACT*********/
 .btn{
@@ -436,14 +459,18 @@ footer{
 /*******************************************/
 
 /**********************RESPONSIVE**********************/
-@media (min-width:923px) and (max-width:1371px){
+@media (min-width:923px) and (max-width:1364px){
 
 	.services{
-		section{
-			margin-top: 145px;
+		.specialty{
+			.leftAngleTriangle{
+				border-right: 110px solid transparent;
+			}
+			.rightAngleTriangle{
+				border-left: 110px solid transparent;
+			}
 		}
 	}
-
 }
 @media (min-width:400px) and (max-width:922px){
 
