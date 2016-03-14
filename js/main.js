@@ -4,13 +4,11 @@ var i=0;
 function previousImage(){
 	if(i<images.length && i>0){
 		i--;
-		console.log(i);
 		$(".hero section").css("background","url(" + images[i] + ")");
 		$(".hero section").css("background-size","cover");
 		
 	}else{
 		i=1;
-		console.log(i);
 		$(".hero section").css("background","url(" + images[i] + ")");
 		$(".hero section").css("background-size","cover");
 	}
@@ -20,12 +18,10 @@ function nextImage(){
 
 	if(i<images.length-1){
 		i++;
-		console.log(i);
 		$(".hero section").css("background","url(" + images[i] + ")");
 		$(".hero section").css("background-size","cover");
 	}else{
 		i=0;
-		console.log(i);
 		$(".hero section").css("background","url(" + images[i] + ")");
 		$(".hero section").css("background-size","cover");
 	}
@@ -71,11 +67,19 @@ $(document).ready(function(){
   		 nextImage();
 	}, 5000);
 
+	$("#studentId").mouseenter(function(){
+		var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+		$(this).addClass("animated swing").one(animationEnd, function() {
+			$(this).removeClass("animated swing");
+		});
+	});
+
 	$(window).scroll(function () {
 		var pageLocation = $(window).scrollTop() + $(window).height();
 		var animFade="animated fadeIn";
 		var animSlideLeft ="animated slideInLeft";
 		var animSlideRight = "animated slideInRight";
+		var animFadeDown= "animated fadeInDown";
 
    		if (pageLocation > $('#google').offset().top) {
         	$("#google").addClass(animFade);
@@ -101,41 +105,45 @@ $(document).ready(function(){
     		$("#gearsServices").addClass(animSlideLeft);
     		$("#gearsServicesInfo").addClass(animSlideRight);
     	}
-	});
-
-
-
-	//Code for MapBox
-	L.mapbox.accessToken = 'pk.eyJ1IjoibW9nb3NpbHZhIiwiYSI6ImNpanJrOHQxZjBicml1NG01eHRuYTJ2d3oifQ.KUmx-Iy2D73MnUkYFrXw3Q';
-
-	//Creates Map
-	var map = new L.mapbox.map('map', 'mapbox.streets', {
-	}).setView([42.52688, -70.898428], 17);
-
-	L.mapbox.featureLayer({
-    	// this feature is in the GeoJSON format: see geojson.org
-    	// for the full specification
-    	type: 'Feature',
-    	geometry: {
-     	   type: 'Point',
-     	   // coordinates here are in longitude, latitude order because
-      	  // x, y is the standard for GeoJSON and many formats
-      	  coordinates: [-70.898428, 42.52688]
-   		},
-   	 	properties: {
-        	title: "K&C's Auto Body",
-        	description: "17 Franklin St. Salem, MA, 01970",
-        	// one can customize markers by adding simplestyle properties
-        	// https://www.mapbox.com/guides/an-open-platform/#simplestyle
-        	'marker-size': 'large',
-        	'marker-color': '#2c4eba',
-        	'marker-symbol': 'car'
+		if (pageLocation > $("#jobs").offset().top) {
+        	$(".subcategory ul").addClass(animFadeDown);
     	}
-	}).addTo(map);
+    });
 
-	map.touchZoom.disable();
-	map.doubleClickZoom.disable();
-	map.scrollWheelZoom.disable();
-	map.keyboard.disable();
+}); //End of document.ready
 
-});
+
+/*************************GOOGLE MAPS API**********************************/
+
+var map;
+	function initMap() {
+    	var kAndC={lat: 42.526927, lng: -70.898420};
+
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: kAndC,
+          zoom: 16,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          scrollwheel: false,
+        });
+
+var infowindow = new google.maps.InfoWindow();
+var service = new google.maps.places.PlacesService(map);
+
+service.getDetails({
+    placeId: 'ChIJUfy2B3EU44kRXWCSXwZWwGs'
+  }, function(place, status) {
+    if (status === google.maps.places.PlacesServiceStatus.OK) {
+      var marker = new google.maps.Marker({
+        map: map,
+        position: place.geometry.location
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+        infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
+          place.formatted_address + '</div>');
+        infowindow.open(map, this);
+      });
+    }
+  });
+      }
+
+
