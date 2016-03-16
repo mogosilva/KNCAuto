@@ -64,7 +64,8 @@ h1, h2, h3 {
 
 h2 {
   text-align: left;
-  margin: 0px 0 60px 200px;
+  margin-left: 10%;
+  margin-bottom: 60px;
   padding-top: 50px; }
 
 h3, h4 {
@@ -361,7 +362,15 @@ footer {
   #hero section {
     margin-top: 130px; }
   #hero img {
-    margin-top: 200px; } }
+    margin-top: 200px; }
+
+  #specialty .leftAngleTriangle {
+    border-right: 6vw solid transparent; }
+  #specialty .rightAngleTriangle {
+    border-left: 6vw solid transparent; }
+
+  #contact #hours {
+    padding: 0px; } }
 @media (min-width: 400px) and (max-width: 922px) {
   .services section {
     margin-top: 165px; } }
