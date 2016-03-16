@@ -40,8 +40,6 @@ function nextImage(){
 
 
 
-
-
 $(document).ready(function(){
 	$("img[value='>']").on("click",nextImage);
 	$("img[value='<']").on("click",previousImage);
@@ -54,8 +52,6 @@ $(document).ready(function(){
 		$(".leftArrow").toggleClass("hidden");
 	});
 
-
-
 	$("#dealsLink").on("click",function(e){
 		 e.preventDefault();
 		$("body").animate({
@@ -67,7 +63,7 @@ $(document).ready(function(){
 	$("#servicesLink").on("click",function(e){
 		 e.preventDefault();
 		$("body").animate({
-			scrollTop: $(".services").offset().top - 98
+			scrollTop: $("#services").offset().top - 98
 		},1000);
 		
 	});
@@ -96,11 +92,12 @@ $(document).ready(function(){
 	});
 
 	$(window).scroll(function () {
-		var pageLocation = $(window).scrollTop() + $(window).height();
 		var animFade="animated fadeIn";
-		var animSlideLeft ="animated slideInLeft";
-		var animSlideRight = "animated slideInRight";
-		var animFadeDown= "animated fadeInDown";
+		var animSlideLeft ="slideInLeft";
+		var animSlideRight = "slideInRight";
+		var animFadeDown= "fadeInDown";
+
+		var pageLocation = ($(window).scrollTop() + $(window).height());
 
    		if (pageLocation > $('#google').offset().top) {
         	$("#google").addClass(animFade);
@@ -116,15 +113,15 @@ $(document).ready(function(){
     	}
     	if (pageLocation > $('#spiesHecker').offset().top) {
     		$("#spiesHecker").addClass(animSlideLeft);
-    		$("#spiesHeckerInfo").addClass(animSlideRight);
+    		$("#spiesHeckerInfo").addClass("slideInRight");
     	}
     	if (pageLocation > $('#carServices').offset().top) {
     		$("#carServices").addClass(animSlideLeft);
-    		$("#carServicesInfo").addClass(animSlideRight);
+    		$("#carServicesInfo").addClass("slideInRight");
     	}
     	if (pageLocation > $('#gearsServices').offset().top) {
     		$("#gearsServices").addClass(animSlideLeft);
-    		$("#gearsServicesInfo").addClass(animSlideRight);
+    		$("#gearsServicesInfo").addClass("slideInRight");
     	}
 		if (pageLocation > $("#jobs").offset().top) {
         	$(".subcategory ul").addClass(animFadeDown);
