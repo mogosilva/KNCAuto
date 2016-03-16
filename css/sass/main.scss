@@ -47,13 +47,6 @@ $backgroundColor: #2c4eba;
 $altBackground: #fff; 
 $hoverColor: #45b1f1;
 
-@mixin responsive-bg-image($image-height, $image-width) {
-  background-size: cover;
-  height: 0;
-  padding-bottom: percentage($image-height / $image-width);
-  display: block;
-}
-
 
 /******************************************
 /* BASE STYLES                   
@@ -136,7 +129,6 @@ header{
 				line-height: 1.3;
 				width: 20%;
 				margin-left: 100px;
-				text-align: left;
 				border-bottom:none;
 				margin-bottom: 10px;
 
@@ -154,18 +146,47 @@ header{
 
 /***********HERO**********/
 
-.hero {
+#hero {
 
 	section{
 		background: url(../../images/image_01.jpg); 
 		background-repeat:no-repeat;
+		background-position: center center;
+		background-size: cover;
+		height: 0;
+  		padding-bottom: 37%;
+  		display: block;
 		margin-top: 100px;
-		@include responsive-bg-image(200px, 540px);
+		-webkit-transition: background 0.2s linear;
+		transition: background 0.2s linear;
+	}
+
+	img{
+			
+			cursor: pointer;
+			margin-top: 280px;
+			margin-left: 20px;
+			width:2.8%;
+			opacity: 1;
+			position:absolute;
+			right:25px;
+			transition: opacity 0.2s linear;
+		}
+	img:nth-child(3),img:nth-child(4){
+			margin-left: 0px;
+			margin-right: 20px;
+			left:25px;
+		}
+	.rightArrow.hidden{
+		opacity: 0;  
+	}
+	.leftArrow.hidden{
+		opacity: 0;  
 	}
 }
 
 /*********DEALS**********/
-.deals{
+#deals{
 
 	background: $altBackground;
 	color: $backgroundColor;
@@ -414,26 +435,6 @@ header{
 	}
 }
 /********CONTACT*********/
-.btn{
-	margin: 250px 0 0 20px;
-	float: left;
-    background-color: $backgroundColor;
-    padding: 12px 18px;
-    font-size: 1em;
-    font-weight: 700;
-    line-height: 1.5;
-    cursor: pointer;
-    border-radius: 4px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-}
-.btn:last-child{
-	margin: 250px 20px 0 0;
-	float: right;
-}
 
 footer{
 	background: #fff;
