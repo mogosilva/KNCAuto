@@ -51,17 +51,6 @@ body {
 /******************************************
 /* LAYOUT                   
 /*******************************************/
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  background: #2c4eba;
-  margin: 0 auto;
-  padding-top: 20px;
-  z-index: 100; }
-
 footer {
   padding: 10px;
   line-height: 1.3; }
@@ -82,38 +71,45 @@ h3, h4 {
   font-size: 1.4em;
   font-weight: 700; }
 
-header nav li {
-  display: inline-block;
-  width: 10%;
-  font-size: 1em;
-  vertical-align: bottom;
-  padding-bottom: 20px;
-  transition: border-bottom 0.3s ease-in-out;
-  -webkit-transition: border-bottom 0.3s ease-in-out;
-  -moz-transition: border-bottom 0.3s ease-in-out;
-  -o-transition: border-bottom 0.3s ease-in-out;
-  border-bottom: 7px solid transparent; }
-header nav li:hover {
-  border-bottom: 7px solid #45b1f1; }
-header nav li:first-child {
-  width: 20%;
-  margin-right: 100px;
-  border-bottom: none;
-  padding-bottom: none; }
-header nav li:last-child {
-  background: #1f3782;
-  border-radius: 5px;
-  padding: 5px 0 5px 10px;
-  line-height: 1.3;
-  width: 20%;
-  margin-left: 100px;
-  border-bottom: none;
-  margin-bottom: 10px; }
-header nav a {
-  color: #fff;
-  text-decoration: none; }
-header nav a:visited, header nav a:active {
-  color: #fff; }
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: #2c4eba;
+  margin: 0 auto;
+  padding-top: 20px;
+  z-index: 100; }
+  header nav li {
+    display: inline-block;
+    width: 14%;
+    font-size: 1em;
+    vertical-align: center;
+    padding-bottom: 20px;
+    transition: border-bottom 0.3s ease-in-out;
+    -webkit-transition: border-bottom 0.3s ease-in-out;
+    -moz-transition: border-bottom 0.3s ease-in-out;
+    -o-transition: border-bottom 0.3s ease-in-out;
+    border-bottom: 7px solid transparent; }
+  header nav li:hover {
+    border-bottom: 7px solid #45b1f1; }
+  header nav li:first-child {
+    width: 20%;
+    border-bottom: none; }
+  header nav li:last-child {
+    background: #1f3782;
+    border-radius: 5px;
+    padding: 5px 0;
+    line-height: 1.3;
+    width: 20%;
+    border-bottom: none;
+    margin-bottom: 10px; }
+  header nav a {
+    color: #fff;
+    text-decoration: none; }
+  header nav a:visited, header nav a:active {
+    color: #fff; }
 
 /***********HERO**********/
 #hero section {
@@ -169,21 +165,21 @@ header nav a:visited, header nav a:active {
       font-size: 1.2em; }
 
 /*******SERVICES*********/
-.services {
+#services {
   background: #2c4eba;
   padding-bottom: 100px; }
-  .services img {
+  #services img {
     width: 20%; }
-  .services h2 {
+  #services h2 {
     text-align: center;
     margin: 0px;
     padding-top: 80px; }
-  .services h3, .services h4 {
+  #services h3, #services h4 {
     display: inline-block;
     vertical-align: bottom;
     border-top: 8px solid #fff;
     padding-top: 10px; }
-  .services h4 {
+  #services h4 {
     border: none; }
 
 .category {
@@ -212,60 +208,60 @@ header nav a:visited, header nav a:active {
     padding-bottom: 15px; }
 
 /*******SPECIALTY*********/
-.specialty {
+#specialty {
+  overflow: hidden;
   background: linear-gradient(0deg, #b3b3b3, #cccccc); }
-  .specialty article {
+  #specialty article {
     text-align: left;
     margin-bottom: 40px; }
-    .specialty article .rightSlide {
+    #specialty article .rightSlide {
       -webkit-animation-duration: 2s;
       -moz-animation-duration: 2s;
       -ms-animation-duration: 2s;
       -o-animation-duration: 2s;
       float: right;
       width: 70%; }
-    .specialty article .leftSlide {
+    #specialty article .leftSlide {
       -webkit-animation-duration: 1.5s;
       -moz-animation-duration: 1.5s;
       -ms-animation-duration: 1.5s;
       -o-animation-duration: 1.5s;
       float: left;
-      width: 30%;
-      padding-left: 20px; }
-      .specialty article .leftSlide .rightAngleTriangle {
+      width: 30%; }
+      #specialty article .leftSlide .rightAngleTriangle {
         float: left; }
-  .specialty article:last-child {
+  #specialty article:last-child {
     margin-bottom: 0px; }
-  .specialty section {
+  #specialty section {
     float: right;
     height: 140px;
     width: 85%;
     color: black;
     background: white;
     padding: 15px 0 0 10px; }
-    .specialty section h2 {
+    #specialty section h2 {
       text-align: left;
       margin: 0px;
       padding: 0px; }
-    .specialty section p {
+    #specialty section p {
       margin-top: 5px;
       max-width: 500px; }
-  .specialty .rightAngleTriangle {
+  #specialty .rightAngleTriangle {
     height: 0;
     width: 0;
     border-bottom: 140px solid white;
-    border-left: 120px solid transparent;
+    border-left: 8vw solid transparent;
     background: none;
     padding: 0px; }
-  .specialty .leftAngleTriangle {
+  #specialty .leftAngleTriangle {
     float: left;
     height: 0;
     width: 0;
     border-top: 140px solid white;
-    border-right: 120px solid transparent;
+    border-right: 8vw solid transparent;
     background: none;
     padding: 0px; }
-  .specialty img {
+  #specialty img {
     float: left;
     background: white;
     height: 140px;
@@ -293,8 +289,7 @@ header nav a:visited, header nav a:active {
   .reviews div {
     display: inline-block;
     vertical-align: middle;
-    width: 70%;
-    padding: 0 20px; }
+    width: 70%; }
     .reviews div img {
       max-width: 180px;
       min-width: 50px;
@@ -306,7 +301,10 @@ header nav a:visited, header nav a:active {
     vertical-align: middle;
     width: 25%; }
     .reviews .icon img {
-      max-width: 110px; }
+      width: 100%; }
+  .reviews .comments {
+    padding-left: 20px;
+    vertical-align: middle; }
 
 /********CONTACT*********/
 #contact {
@@ -359,11 +357,11 @@ footer {
 /* MAP BOX                   
 /*******************************************/
 /**********************RESPONSIVE**********************/
-@media (min-width: 923px) and (max-width: 1364px) {
-  .services .specialty .leftAngleTriangle {
-    border-right: 110px solid transparent; }
-  .services .specialty .rightAngleTriangle {
-    border-left: 110px solid transparent; } }
+@media (min-width: 923px) and (max-width: 1279px) {
+  #hero section {
+    margin-top: 130px; }
+  #hero img {
+    margin-top: 200px; } }
 @media (min-width: 400px) and (max-width: 922px) {
   .services section {
     margin-top: 165px; } }
