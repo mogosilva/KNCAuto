@@ -58,7 +58,7 @@ footer {
 /******************************************
 /* ADDITIONAL STYLES                   
 /*******************************************/
-h1, h2, h3 {
+h1, h2 {
   font-size: 2em;
   font-weight: 700; }
 
@@ -82,35 +82,37 @@ header {
   margin: 0 auto;
   padding-top: 20px;
   z-index: 100; }
-  header nav li {
-    display: inline-block;
-    width: 14%;
-    font-size: 1em;
-    vertical-align: center;
-    padding-bottom: 20px;
-    transition: border-bottom 0.3s ease-in-out;
-    -webkit-transition: border-bottom 0.3s ease-in-out;
-    -moz-transition: border-bottom 0.3s ease-in-out;
-    -o-transition: border-bottom 0.3s ease-in-out;
-    border-bottom: 7px solid transparent; }
-  header nav li:hover {
-    border-bottom: 7px solid #45b1f1; }
-  header nav li:first-child {
-    width: 20%;
-    border-bottom: none; }
-  header nav li:last-child {
-    background: #1f3782;
-    border-radius: 5px;
-    padding: 5px 0;
-    line-height: 1.3;
-    width: 20%;
-    border-bottom: none;
-    margin-bottom: 10px; }
-  header nav a {
-    color: #fff;
-    text-decoration: none; }
-  header nav a:visited, header nav a:active {
-    color: #fff; }
+  header nav {
+    padding-bottom: 0px; }
+    header nav li {
+      display: inline-block;
+      width: 14%;
+      font-size: 1em;
+      vertical-align: center;
+      padding-bottom: 20px;
+      transition: border-bottom 0.3s ease-in-out;
+      -webkit-transition: border-bottom 0.3s ease-in-out;
+      -moz-transition: border-bottom 0.3s ease-in-out;
+      -o-transition: border-bottom 0.3s ease-in-out;
+      border-bottom: 7px solid transparent; }
+    header nav li:hover {
+      border-bottom: 7px solid #45b1f1; }
+    header nav li:first-child {
+      width: 20%;
+      border-bottom: none; }
+    header nav li:last-child {
+      background: #1f3782;
+      border-radius: 5px;
+      padding: 5px 0;
+      line-height: 1.3;
+      width: 20%;
+      border-bottom: none;
+      margin-bottom: 10px; }
+    header nav a {
+      color: #fff;
+      text-decoration: none; }
+    header nav a:visited, header nav a:active {
+      color: #fff; }
 
 /***********HERO**********/
 #hero section {
@@ -121,12 +123,12 @@ header {
   height: 0;
   padding-bottom: 37%;
   display: block;
-  margin-top: 100px;
+  margin-top: 130px;
   -webkit-transition: background 0.2s linear;
   transition: background 0.2s linear; }
 #hero img {
   cursor: pointer;
-  margin-top: 280px;
+  margin-top: 200px;
   margin-left: 20px;
   width: 2.8%;
   opacity: 1;
@@ -155,13 +157,12 @@ header {
     max-width: 18%;
     margin-right: 130px;
     display: inline-block;
-    vertical-align: middle; }
+    vertical-align: middle;
+    padding-bottom: 0px; }
   #deals div {
-    display: inline-block; }
-    #deals div h3 {
-      text-align: left; }
+    display: inline-block;
+    text-align: left; }
     #deals div p {
-      text-align: left;
       margin-top: 5px;
       font-size: 1.2em; }
 
@@ -169,6 +170,8 @@ header {
 #services {
   background: #2c4eba;
   padding-bottom: 100px; }
+  #services #marker {
+    width: 20%; }
   #services img {
     width: 20%; }
   #services h2 {
@@ -214,7 +217,8 @@ header {
   background: linear-gradient(0deg, #b3b3b3, #cccccc); }
   #specialty article {
     text-align: left;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    background-color: transparent; }
     #specialty article .rightSlide {
       -webkit-animation-duration: 2s;
       -moz-animation-duration: 2s;
@@ -251,17 +255,19 @@ header {
     height: 0;
     width: 0;
     border-bottom: 140px solid white;
-    border-left: 8vw solid transparent;
+    border-left: 6vw solid transparent;
     background: none;
-    padding: 0px; }
+    padding: 0px;
+    display: block; }
   #specialty .leftAngleTriangle {
     float: left;
     height: 0;
     width: 0;
     border-top: 140px solid white;
-    border-right: 8vw solid transparent;
+    border-right: 6vw solid transparent;
     background: none;
-    padding: 0px; }
+    padding: 0px;
+    display: block; }
   #specialty img {
     float: left;
     background: white;
@@ -269,13 +275,13 @@ header {
     padding: 12px 0; }
 
 /*******REVIEWS********/
-.reviews {
+#reviews {
   background: #0d1738;
   padding-bottom: 150px; }
-  .reviews h2 {
+  #reviews h2 {
     margin-bottom: 0px;
     padding-top: 100px; }
-  .reviews li {
+  #reviews li {
     color: #fff;
     display: inline-block;
     vertical-align: middle;
@@ -287,23 +293,23 @@ header {
     -moz-animation-duration: 4s;
     -ms-animation-duration: 4s;
     -o-animation-duration: 4s; }
-  .reviews div {
+  #reviews div {
     display: inline-block;
     vertical-align: middle;
     width: 70%; }
-    .reviews div img {
+    #reviews div img {
       max-width: 180px;
       min-width: 50px;
       padding-top: 20px; }
-    .reviews div p {
+    #reviews div p {
       padding-top: 5px; }
-  .reviews .icon {
+  #reviews .icon {
     display: inline-block;
     vertical-align: middle;
     width: 25%; }
-    .reviews .icon img {
+    #reviews .icon img {
       width: 100%; }
-  .reviews .comments {
+  #reviews .comments {
     padding-left: 20px;
     vertical-align: middle; }
 
@@ -320,11 +326,9 @@ header {
       font-size: 1.6em; }
     #contact section p {
       font-size: 1.2em; }
-  #contact #hours {
-    padding: 0 40px; }
-    #contact #hours div {
-      float: left;
-      width: 50%; }
+  #contact #hours div {
+    float: left;
+    width: 50%; }
 
 /********MAP*********/
 #map {
@@ -353,26 +357,5 @@ footer {
     display: inline-block;
     max-width: 50px;
     float: left; }
-
-/******************************************
-/* MAP BOX                   
-/*******************************************/
-/**********************RESPONSIVE**********************/
-@media (min-width: 923px) and (max-width: 1279px) {
-  #hero section {
-    margin-top: 130px; }
-  #hero img {
-    margin-top: 200px; }
-
-  #specialty .leftAngleTriangle {
-    border-right: 6vw solid transparent; }
-  #specialty .rightAngleTriangle {
-    border-left: 6vw solid transparent; }
-
-  #contact #hours {
-    padding: 0px; } }
-@media (min-width: 400px) and (max-width: 922px) {
-  .services section {
-    margin-top: 165px; } }
 
 /*# sourceMappingURL=main.css.map */

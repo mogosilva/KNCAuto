@@ -71,7 +71,7 @@ $(document).ready(function(){
 	$("#reviewsLink").on("click",function(e){
 		 e.preventDefault();
 		$("body").animate({
-			scrollTop: $(".reviews").offset().top - 98
+			scrollTop: $("#reviews").offset().top - 98
 		},1000);
 		
 	});
