@@ -1,0 +1,137 @@
+/**********************RESPONSIVE**********************/
+/********************SMALL SCREENS*******************/
+@media (min-width: 768px) and (max-width: 922px) {
+  #hero section img {
+    margin-top: 150px; }
+
+  #services #marker {
+    width: 250px; }
+
+  #specialty {
+    padding: 20px 0; }
+    #specialty article {
+      background-color: white;
+      margin-bottom: 20px;
+      padding: 20px 10px; }
+      #specialty article .rightSlide section {
+        width: 100%;
+        padding-left: 0px; }
+    #specialty .leftAngleTriangle, #specialty .rightAngleTriangle {
+      display: none; } }
+/****************************************************/
+/********************X-SMALL SCREENS*****************/
+@media (max-width: 767px) {
+  h1 {
+    font-size: 1.8em; }
+
+  h2, h3 {
+    font-size: 1.4em; }
+
+  h2 {
+    text-align: left;
+    margin-left: 10%;
+    margin-bottom: 30px;
+    padding-top: 30px; }
+
+  header {
+    position: static; }
+    header nav {
+      padding-bottom: 20px; }
+      header nav li {
+        display: none;
+        width: 100%; }
+      header nav li:first-child {
+        width: 100%;
+        display: block; }
+      header nav li:last-child {
+        margin: 0 auto;
+        width: 90vw;
+        padding: 5px 0px;
+        display: block; }
+
+  #hero section {
+    margin-top: 0px; }
+    #hero section img {
+      margin-top: 13vh;
+      width: 4%; }
+
+  #deals li {
+    padding-bottom: 50px; }
+    #deals li img {
+      max-width: 160px;
+      margin: 0 auto;
+      display: block;
+      padding-bottom: 20px; }
+    #deals li div {
+      display: block;
+      text-align: center; }
+  #deals li:last-child {
+    padding-bottom: 100px; }
+    #deals li:last-child img {
+      max-width: 200px;
+      padding-left: 40px; }
+
+  #services #marker {
+    width: 200px; }
+  #services .category {
+    padding-bottom: 0px;
+    padding-top: 50px; }
+  #services .subcategory {
+    width: 100%;
+    padding-bottom: 50px; }
+    #services .subcategory img {
+      width: 80px; }
+  #services .subcategory:first-child img {
+    width: 50px; }
+
+  #specialty {
+    padding: 20px 0; }
+    #specialty article {
+      background-color: white;
+      margin-bottom: 20px;
+      padding: 20px 10px; }
+      #specialty article .leftSlide {
+        width: 100%;
+        text-align: center; }
+      #specialty article .rightSlide {
+        width: 100%; }
+    #specialty .leftAngleTriangle, #specialty .rightAngleTriangle {
+      display: none; }
+    #specialty section {
+      width: 100%;
+      padding-left: 0px; }
+      #specialty section h2 {
+        text-align: center; }
+      #specialty section p {
+        text-align: center;
+        max-width: 100%; }
+    #specialty img {
+      float: none; }
+
+  #reviews {
+    padding-bottom: 20px; }
+    #reviews li {
+      width: 100%;
+      margin: 60px 0; }
+    #reviews div {
+      width: 100%; }
+    #reviews .icon {
+      width: 100%; }
+      #reviews .icon img {
+        width: 15vh; }
+    #reviews .comments {
+      padding: 0px; }
+
+  #contact {
+    padding: 65px 10px; }
+    #contact section {
+      width: 100%; }
+      #contact section p {
+        font-size: 1.1em; }
+
+  footer section {
+    margin-right: 2vw;
+    margin-top: 1.5vh; } }
+/****************************************************/
+
+/*# sourceMappingURL=media.css.map */

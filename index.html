@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/animate.css">
 		<link rel="stylesheet" href="css/sass/main.css">
+		<link rel="stylesheet" href="css/sass/media.css">
 
 		<!-- Mapbox/GoogleMaps -->
 		<meta name="viewport" content="initial-scale=1.0">
@@ -65,7 +66,7 @@
 		</div>
 
 		<div id = "services">
-			<img src="images/serviceMarker.png" alt="services page marker">
+			<img src="images/serviceMarker.png" alt="services page marker" id="marker">
 			<h2>PROVIDING OUR SERVICES FOR OVER 40 YEARS</h2>
 			<ul id="jobs" class="clearfix category">
 				<li class = "subcategory">
@@ -79,9 +80,9 @@
 					<img src="images/repairIcon.png"alt="broken car">
 					<h3>REPAIR</h3>
 					<ul>
-						<li>Dents</li>
-						<li>Collisions</li>
 						<li>Unibody Straightening</li>
+						<li>Collisions</li>
+						<li>Dents</li>
 					</ul>	
 				</li>
 				<li class = "subcategory">
@@ -97,6 +98,11 @@
 
 		<div id="specialty" class="clearfix">
 			<article class= "clearfix">
+				<div id="spiesHecker" class= "clearfix leftSlide animated">
+					<section class="rightAngleTriangle"></section>
+					<img src="images/sh.png" alt="Spies Hecker logo">
+					<section class="leftAngleTriangle"></section>
+				</div>
 				<div id="spiesHeckerInfo" class="rightSlide animated">
 					<section>
 						<h2>WE USE THE BEST PAINT</h2>
@@ -104,15 +110,14 @@
 					</section>
 					<section class="rightAngleTriangle"></section>
 				</div>
-				
-				<div id="spiesHecker" class= "clearfix leftSlide animated">
-					<section class="rightAngleTriangle"></section>
-					<img src="images/sh.png" alt="Spies Hecker logo">
-					<section class="leftAngleTriangle"></section>
-				</div>
 			</article>
 
 			<article class= "clearfix">
+				<div id="carServices" class= "clearfix leftSlide animated">
+					<section class="rightAngleTriangle"></section>
+					<img src="images/carServices.png" alt="car in front view">
+					<section class="leftAngleTriangle"></section>
+				</div>
 				<div id="carServicesInfo" class="rightSlide animated">
 					<section>
 						<h2>ON-SITE RENTAL CARS</h2>
@@ -120,15 +125,15 @@
 					</section>
 					<section class="rightAngleTriangle"></section>
 				</div>
-
-				<div id="carServices" class= "clearfix leftSlide animated">
-					<section class="rightAngleTriangle"></section>
-					<img src="images/carServices.png" alt="car in front view">
-					<section class="leftAngleTriangle"></section>
-				</div>
 			</article>
 
 			<article class= "clearfix">
+				<div id="gearsServices" class= "clearfix leftSlide animated">
+					<section class="rightAngleTriangle"></section>
+					<img src="images/gearsServices.png" alt="gears icon">
+					<section class="leftAngleTriangle"></section>
+				</div>
+
 				<div id="gearsServicesInfo" class="clearfix rightSlide animated">
 					<section>
 						<h2>OEM PARTS</h2>
@@ -136,16 +141,10 @@
 					</section>
 					<section class="rightAngleTriangle"></section>
 				</div>
-
-				<div id="gearsServices" class= "clearfix leftSlide animated">
-					<section class="rightAngleTriangle"></section>
-					<img src="images/gearsServices.png" alt="gears icon">
-					<section class="leftAngleTriangle"></section>
-				</div>
 			</article>
 		</div>
 
-		<section class="reviews clear">
+		<section id="reviews"class="clear">
 			<h2>REVIEWS</h2>
 			<ul>
 				<li id="google">
