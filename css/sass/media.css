@@ -21,6 +21,9 @@
 /****************************************************/
 /********************X-SMALL SCREENS*****************/
 @media (max-width: 767px) {
+  body {
+    line-height: 1.4; }
+
   h1 {
     font-size: 1.8em; }
 
@@ -115,6 +118,9 @@
       margin: 60px 0; }
     #reviews div {
       width: 100%; }
+      #reviews div p {
+        width: 80%;
+        margin: 0 auto; }
     #reviews .icon {
       width: 100%; }
       #reviews .icon img {
