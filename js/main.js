@@ -4,35 +4,36 @@ var heroImage=$("#hero section");
 var counter=5000;
 var autoFlip = window.setInterval(nextImage, 5000);
 
-function previousImage(){
-	
-	clearInterval(autoFlip);
-	autoFlip = window.setInterval(nextImage, 5000);
-	if(i<images.length && i>0){
-		i--;
-		heroImage.css("background","url(" + images[i] + ")");
-		heroImage.css("background-size","cover");
-		
-	}else{
-		i=1;
-		heroImage.css("background","url(" + images[i] + ")");
-		heroImage.css("background-size","cover");
-	}
-}
-function nextImage(){
-	//i = i + 1;
+function resetAutoFlip(){
+
 	clearInterval(autoFlip);
 	autoFlip = window.setInterval(nextImage, 5000);
 
+}
+
+function previousImage(){
+	
+	resetAutoFlip();
+
+	if(i<images.length && i>0){
+		i--;
+	}else{
+		i=1;
+	}
+	heroImage.css("background","url(" + images[i] + ")");
+	heroImage.css("background-size","cover");
+}
+function nextImage(){
+
+	resetAutoFlip()
+
 	if(i<images.length-1){
 		i++;
-		heroImage.css("background","url(" + images[i] + ")");
-		heroImage.css("background-size","cover");
 	}else{
 		i=0;
+	}
 		heroImage.css("background","url(" + images[i] + ")");
 		heroImage.css("background-size","cover");
-	}
 }
 
 
@@ -54,7 +55,7 @@ $(document).ready(function(){
 
 	$("#dealsLink").on("click",function(e){
 		 e.preventDefault();
-		$("body").animate({
+		$("body,html").animate({
 			scrollTop: $("#deals").offset().top - 100
 		},1000);
 		
@@ -62,7 +63,7 @@ $(document).ready(function(){
 
 	$("#servicesLink").on("click",function(e){
 		 e.preventDefault();
-		$("body").animate({
+		$("body,html").animate({
 			scrollTop: $("#services").offset().top - 98
 		},1000);
 		
@@ -70,7 +71,7 @@ $(document).ready(function(){
 
 	$("#reviewsLink").on("click",function(e){
 		 e.preventDefault();
-		$("body").animate({
+		$("body,html").animate({
 			scrollTop: $("#reviews").offset().top - 98
 		},1000);
 		
@@ -78,7 +79,7 @@ $(document).ready(function(){
 
 	$("#locationLink").on("click",function(e){
 		 e.preventDefault();
-		$("body").animate({
+		$("body,html").animate({
 			scrollTop: $("#contact").offset().top - 98
 		},1000);
 		
