@@ -109,6 +109,7 @@ header{
 			-moz-transition:border-bottom 0.3s ease-in-out;
 			-o-transition:border-bottom 0.3s ease-in-out;
 			border-bottom: 7px solid transparent;
+			-webkit-backface-visibility: hidden;
 		}
 		li:hover{
 		border-bottom: 7px solid $hoverColor;
@@ -173,9 +174,10 @@ header{
 		height: 0;
   		padding-bottom: 37%;
   		display: block;
-		margin-top: 130px;
+		margin-top: 100px;
 		-webkit-transition: background 0.2s linear;
 		transition: background 0.2s linear;
+		-webkit-backface-visibility: hidden;
 	}
 
 	img{
@@ -188,6 +190,7 @@ header{
 			position:absolute;
 			right:25px;
 			transition: opacity 0.2s linear;
+			-webkit-backface-visibility: hidden;
 		}
 	img:nth-child(3),img:nth-child(4){
 			margin-left: 0px;
@@ -288,6 +291,7 @@ header{
 		-moz-animation-duration: 3s;
 		-ms-animation-duration: 3s;
 		-o-animation-duration: 3s;
+		-webkit-backface-visibility: hidden;
 	}
 	img{
 		display: block;
@@ -392,6 +396,7 @@ header{
 		-moz-animation-duration: 4s;
 		-ms-animation-duration: 4s;
 		-o-animation-duration: 4s;
+		-webkit-backface-visibility: hidden;
 	}
 	div{
 		display: inline-block;

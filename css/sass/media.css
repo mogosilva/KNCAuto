@@ -1,19 +1,21 @@
 /**********************RESPONSIVE**********************/
 /********************SMALL SCREENS*******************/
 @media (min-width: 768px) and (max-width: 922px) {
-  header nav {
-    padding-bottom: 20px; }
-    header nav li {
-      display: inline-block;
-      width: 14%; }
-    header nav li:nth-child(2) {
-      clear: both;
-      width: 20%; }
-    header nav li:last-child {
-      width: 20%; }
+  header nav li {
+    display: inline-block;
+    width: 16%; }
+  header nav li:nth-child(2) {
+    clear: both;
+    width: 100%;
+    display: block;
+    margin: 0 auto; }
+  header nav li:last-child {
+    width: 26%; }
 
-  #hero section img {
-    margin-top: 150px; }
+  #hero section {
+    margin-top: 33vh; }
+    #hero section img {
+      margin-top: 150px; }
 
   #services #marker {
     width: 250px; }
@@ -28,7 +30,10 @@
         width: 100%;
         padding-left: 0px; }
     #specialty .leftAngleTriangle, #specialty .rightAngleTriangle {
-      display: none; } }
+      display: none; }
+
+  #contact {
+    padding: 65px 67px; } }
 /****************************************************/
 /********************X-SMALL SCREENS*****************/
 @media (max-width: 767px) {
@@ -151,6 +156,9 @@
       width: 100%; }
       #contact section p {
         font-size: 1.1em; }
+
+  #map {
+    width: 90%; }
 
   footer section {
     margin-right: 2vw;
