@@ -88,7 +88,7 @@ header {
       display: inline-block;
       width: 14%;
       font-size: 1em;
-      vertical-align: center;
+      vertical-align: bottom;
       padding-bottom: 20px;
       transition: border-bottom 0.3s ease-in-out;
       -webkit-transition: border-bottom 0.3s ease-in-out;
@@ -98,6 +98,19 @@ header {
     header nav li:hover {
       border-bottom: 7px solid #45b1f1; }
     header nav li:first-child {
+      border-bottom: none;
+      display: none; }
+      header nav li:first-child div {
+        width: 30px;
+        display: inline-block;
+        float: right;
+        margin-right: 5%; }
+      header nav li:first-child p {
+        border: 2px solid #fff;
+        width: 100%;
+        margin-bottom: 4px; }
+    header nav li:nth-child(2) {
+      clear: both;
       width: 20%;
       border-bottom: none; }
     header nav li:last-child {
@@ -113,6 +126,8 @@ header {
       text-decoration: none; }
     header nav a:visited, header nav a:active {
       color: #fff; }
+  header .visible {
+    display: inline-block; }
 
 /***********HERO**********/
 #hero section {
@@ -177,7 +192,7 @@ header {
   #services h2 {
     text-align: center;
     margin: 0px;
-    padding-top: 80px; }
+    padding: 80px 0 0 0; }
   #services h3, #services h4 {
     display: inline-block;
     vertical-align: bottom;

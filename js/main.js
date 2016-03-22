@@ -64,7 +64,7 @@ $(document).ready(function(){
 	$("#servicesLink").on("click",function(e){
 		 e.preventDefault();
 		$("body,html").animate({
-			scrollTop: $("#services").offset().top - 98
+			scrollTop: $("#services").offset().top - 130
 		},1000);
 		
 	});
@@ -100,16 +100,16 @@ $(document).ready(function(){
 
 		var pageLocation = ($(window).scrollTop() + $(window).height());
 
-   		if (pageLocation > $('#google').offset().top) {
+   		if (pageLocation > $('#google').offset().top - 50) {
         	$("#google").addClass(animFade);
     	}
-    	if (pageLocation > $('#angie').offset().top) {
+    	if (pageLocation > $('#angie').offset().top - 50) {
         	$("#angie").addClass(animFade);
     	}
-    	if (pageLocation > $('#yellowPages').offset().top) {
+    	if (pageLocation > $('#yellowPages').offset().top - 50) {
        		$("#yellowPages").addClass(animFade);
     	}
-    	if (pageLocation > $('#yelp').offset().top) {
+    	if (pageLocation > $('#yelp').offset().top - 50) {
         	$("#yelp").addClass(animFade);
     	}
     	if (pageLocation > $('#spiesHecker').offset().top) {
@@ -128,6 +128,12 @@ $(document).ready(function(){
         	$(".subcategory ul").addClass(animFadeDown);
     	}
     });
+
+
+		$("#menu").on("click", function(){
+			$("#dealsLink, #servicesLink, #reviewsLink, #locationLink").toggleClass("visible");
+		});
+		
 
 }); //End of document.ready
 
