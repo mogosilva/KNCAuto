@@ -64,7 +64,7 @@ $(document).ready(function(){
 	$("#servicesLink").on("click",function(e){
 		 e.preventDefault();
 		$("body,html").animate({
-			scrollTop: $("#services").offset().top - 130
+			scrollTop: $("#services").offset().top - 98
 		},1000);
 		
 	});

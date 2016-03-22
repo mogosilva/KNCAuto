@@ -94,7 +94,8 @@ header {
       -webkit-transition: border-bottom 0.3s ease-in-out;
       -moz-transition: border-bottom 0.3s ease-in-out;
       -o-transition: border-bottom 0.3s ease-in-out;
-      border-bottom: 7px solid transparent; }
+      border-bottom: 7px solid transparent;
+      -webkit-backface-visibility: hidden; }
     header nav li:hover {
       border-bottom: 7px solid #45b1f1; }
     header nav li:first-child {
@@ -138,9 +139,10 @@ header {
   height: 0;
   padding-bottom: 37%;
   display: block;
-  margin-top: 130px;
+  margin-top: 100px;
   -webkit-transition: background 0.2s linear;
-  transition: background 0.2s linear; }
+  transition: background 0.2s linear;
+  -webkit-backface-visibility: hidden; }
 #hero img {
   cursor: pointer;
   margin-top: 200px;
@@ -149,7 +151,8 @@ header {
   opacity: 1;
   position: absolute;
   right: 25px;
-  transition: opacity 0.2s linear; }
+  transition: opacity 0.2s linear;
+  -webkit-backface-visibility: hidden; }
 #hero img:nth-child(3), #hero img:nth-child(4) {
   margin-left: 0px;
   margin-right: 20px;
@@ -220,7 +223,8 @@ header {
     -webkit-animation-duration: 3s;
     -moz-animation-duration: 3s;
     -ms-animation-duration: 3s;
-    -o-animation-duration: 3s; }
+    -o-animation-duration: 3s;
+    -webkit-backface-visibility: hidden; }
   .subcategory img {
     display: block;
     margin: 0 auto;
@@ -307,7 +311,8 @@ header {
     -webkit-animation-duration: 4s;
     -moz-animation-duration: 4s;
     -ms-animation-duration: 4s;
-    -o-animation-duration: 4s; }
+    -o-animation-duration: 4s;
+    -webkit-backface-visibility: hidden; }
   #reviews div {
     display: inline-block;
     vertical-align: middle;
