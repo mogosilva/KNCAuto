@@ -3,6 +3,8 @@ var i=0;
 var heroImage=$("#hero section");
 var counter=5000;
 var autoFlip = window.setInterval(nextImage, 5000);
+var offsetAmount=0;
+
 
 function resetAutoFlip(){
 
@@ -36,7 +38,34 @@ function nextImage(){
 		heroImage.css("background-size","cover");
 }
 
+function getWidth(){
 
+	var width = $(window).width();
+	if(width<=1295 && width >= 1200){
+
+		offsetAmount=110;
+	}
+
+	else if(width<=1199 && width >= 993){
+
+		offsetAmount=115;
+	}
+
+	else if (width <= 992 && width >= 768){
+		
+		offsetAmount=165;
+	}
+	else if(width <= 767){
+		
+		offsetAmount=-5;
+
+	}
+	else{
+		
+		offsetAmount=90;
+	}
+
+}
 
 
 
@@ -53,34 +82,39 @@ $(document).ready(function(){
 		$(".leftArrow").toggleClass("hidden");
 	});
 
+
 	$("#dealsLink").on("click",function(e){
 		 e.preventDefault();
+		 getWidth();
 		$("body,html").animate({
-			scrollTop: $("#deals").offset().top - 100
+			scrollTop: $("#deals").offset().top - offsetAmount
 		},1000);
 		
 	});
 
 	$("#servicesLink").on("click",function(e){
 		 e.preventDefault();
+		 getWidth();
 		$("body,html").animate({
-			scrollTop: $("#services").offset().top - 98
+			scrollTop: $("#services").offset().top - offsetAmount
 		},1000);
 		
 	});
 
 	$("#reviewsLink").on("click",function(e){
 		 e.preventDefault();
+		 getWidth();
 		$("body,html").animate({
-			scrollTop: $("#reviews").offset().top - 98
+			scrollTop: $("#reviews").offset().top - offsetAmount
 		},1000);
 		
 	});
 
 	$("#locationLink").on("click",function(e){
 		 e.preventDefault();
+		 getWidth();
 		$("body,html").animate({
-			scrollTop: $("#contact").offset().top - 98
+			scrollTop: $("#contact").offset().top - offsetAmount
 		},1000);
 		
 	});
