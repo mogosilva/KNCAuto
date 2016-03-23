@@ -43,7 +43,7 @@ function getWidth(){
 	var width = $(window).width();
 	if(width<=1295 && width >= 1200){
 
-		offsetAmount=110;
+		offsetAmount=100;
 	}
 
 	else if(width<=1199 && width >= 993){
