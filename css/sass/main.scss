@@ -159,6 +159,13 @@ header{
 		display: inline-block;
 	}
 	
+	.rotateMenu{
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+	}
 
 }
 
@@ -244,9 +251,11 @@ header{
 	padding-bottom: 100px;
 	#marker{
 		width: 20%;
+		height: auto;
 	}
 	img{
 		width: 20%;
+		
 	}
 	h2{
 		text-align: center;
@@ -254,10 +263,13 @@ header{
 		padding: 80px 0 0 0;
 	}
 	h3, h4{
-		display: inline-block;
-		vertical-align: bottom;
+		display: block;
+		margin: 0 auto;
 		border-top: 8px solid #fff;
 		padding-top: 10px;
+	}
+	h3{
+		width: 60%;
 	}
 	h4{
 		border: none;
