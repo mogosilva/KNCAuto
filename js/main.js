@@ -52,7 +52,6 @@ function getWidth(){
 	}
 
 	else if (width <= 992 && width >= 768){
-		
 		offsetAmount=165;
 	}
 	else if(width <= 767){

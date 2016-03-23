@@ -59,18 +59,37 @@
     header nav {
       padding-bottom: 20px; }
       header nav li {
-        display: none;
-        width: 100%; }
+        display: block;
+        overflow: hidden;
+        max-height: 0px;
+        width: 0%;
+        padding-bottom: 0px;
+        border-bottom: none;
+        transition: max-height 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+        -webkit-transition: max-height 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+        -moz-transition: max-height 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+        -o-transition: max-height 0.3s ease-in-out, padding-bottom 0.3s ease-in-out; }
       header nav li:first-child {
-        display: block; }
+        display: block;
+        padding: 10px 0;
+        max-height: 100px;
+        width: 100%; }
+        header nav li:first-child div {
+          transition: transform 0.2s ease-in-out;
+          -webkit-transition: transform 0.2s ease-in-out;
+          -moz-transition: transform 0.2s ease-in-out;
+          -o-transition: transform 0.2s ease-in-out; }
       header nav li:nth-child(2) {
         width: 100%;
-        display: block; }
+        padding-bottom: 10px;
+        max-height: 100px; }
       header nav li:last-child {
         margin: 0 auto;
         width: 90vw;
         padding: 5px 0px;
-        display: block; }
+        max-height: 100px; }
+      header nav li:hover {
+        border-bottom: none; }
 
   #hero section {
     margin-top: 0px; }
