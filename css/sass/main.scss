@@ -149,22 +149,23 @@ header{
 		a {
 			color: $color;
 			text-decoration: none;
-		
 		}
 		a:visited, a:active{
 			color:$color;
 		}
 	}
 	.visible{
-		display: inline-block;
+		padding-bottom:20px;
+		max-height: 100px;
+		width: 100%;
 	}
 	
 	.rotateMenu{
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
 	}
 
 }
