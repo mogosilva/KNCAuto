@@ -165,6 +165,7 @@ $(document).ready(function(){
 
 
 		$("#menu").on("click", function(){
+			$("#menu").toggleClass("rotateMenu");
 			$("#dealsLink, #servicesLink, #reviewsLink, #locationLink").toggleClass("visible");
 		});
 		
@@ -175,14 +176,18 @@ $(document).ready(function(){
 /*************************GOOGLE MAPS API**********************************/
 
 var map;
+
 	function initMap() {
     	var kAndC={lat: 42.526927, lng: -70.898420};
+    	var isDraggable = $(document).width() > 767 ? true : false; // If document (your website) is wider than 480px, isDraggable = true, else isDraggable = false
+
 
         map = new google.maps.Map(document.getElementById('map'), {
           center: kAndC,
           zoom: 16,
           mapTypeId: google.maps.MapTypeId.ROADMAP,
           scrollwheel: false,
+          draggable: isDraggable,
         });
 
 		var infowindow = new google.maps.InfoWindow();
