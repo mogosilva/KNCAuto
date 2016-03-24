@@ -1,4 +1,4 @@
-/**********************RESPONSIVE**********************/
+/*********************RESPONSIVE**********************/
 /********************SMALL SCREENS*******************/
 
 @media (min-width:768px) and (max-width:922px){
@@ -34,6 +34,10 @@
 		}
 		h3{
 			width: 70%;
+		}
+		img{
+		width: 22%;
+		
 		}
 	}
 	#specialty{
@@ -167,11 +171,7 @@
 		h3{
 			width: 40%;
 		}
-		li:first-child{
-			h3{
-				width: 52%;
-			}
-		}
+
 		h2, h4{
 			padding-left: 20px;
 			padding-right: 20px;
@@ -190,11 +190,7 @@
 				width: 80px;
 			}
 		}
-		.subcategory:first-child{
-			img{
-				width: 50px;
-			}
-		}
+
 	}
 	#specialty{
 		padding: 20px 0;
@@ -276,4 +272,4 @@
 		}
 	}
 }
-/****************************************************/
+/***************************************************/
