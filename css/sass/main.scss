@@ -173,22 +173,35 @@ header{
 /***********HERO**********/
 
 #hero {
-
+	background: $color;
+	.repairsGallery{
+		opacity: 0;
+		transition: opacity 0.3s ease-in-out;
+		img{
+			width: 100%;
+			margin: 0px;
+			position: absolute;
+			right:0;
+		}
+	}
+	.repairsGallery:first-child{
+		opacity: 1;
+		
+	}
 	section{
-		background: url(../../images/image_01.jpg); 
-		background-repeat:no-repeat;
-		background-position: center center;
-		background-size: cover;
+		// background: url(../../images/beforeAfter_01.svg); 
+		// background-repeat:no-repeat;
+		// background-position: center center;
+		// background-size: cover;
 		height: 0;
-  		padding-bottom: 37%;
+  		padding-bottom: 37.4%;
   		display: block;
 		margin-top: 100px;
-		-webkit-transition: background 0.2s linear;
-		transition: background 0.2s linear;
-		-webkit-backface-visibility: hidden;
-	}
+		// -webkit-transition: background 0.2s linear;
+		// transition: background 0.2s linear;
+		// -webkit-backface-visibility: hidden;
 
-	img{
+		img{
 			
 			cursor: pointer;
 			margin-top: 200px;
@@ -200,17 +213,19 @@ header{
 			transition: opacity 0.2s linear;
 			-webkit-backface-visibility: hidden;
 		}
-	img:nth-child(3),img:nth-child(4){
-			margin-left: 0px;
-			margin-right: 20px;
-			left:25px;
+		img:nth-child(3),img:nth-child(4){
+				margin-left: 0px;
+				margin-right: 20px;
+				left:25px;
+			}
+		.rightArrow.hidden{
+			opacity: 0;  
 		}
-	.rightArrow.hidden{
-		opacity: 0;  
+		.leftArrow.hidden{
+			opacity: 0;  
+		}
 	}
-	.leftArrow.hidden{
-		opacity: 0;  
-	}
+
 }
 
 /*********DEALS**********/
