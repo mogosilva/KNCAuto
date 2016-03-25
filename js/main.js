@@ -1,41 +1,38 @@
-var images=["images/image_01.jpg","images/image_02.jpg"];
+
 var i=0;
-var heroImage=$("#hero section");
 var counter=5000;
-var autoFlip = window.setInterval(nextImage, 5000);
+// var autoFlip = window.setInterval(nextImage, 5000);
 var offsetAmount=0;
+var imageDivs=$(".repairsGallery");
 
+// function resetAutoFlip(){
 
-function resetAutoFlip(){
+// 	clearInterval(autoFlip);
+// 	autoFlip = window.setInterval(nextImage, 5000);
 
-	clearInterval(autoFlip);
-	autoFlip = window.setInterval(nextImage, 5000);
-
-}
+// }
 
 function previousImage(){
 	
-	resetAutoFlip();
-
-	if(i<images.length && i>0){
+	// resetAutoFlip();
+	$(imageDivs[i]).css("opacity","0");
+	if(i<imageDivs.length && i>0){
 		i--;
 	}else{
-		i=1;
+		i=imageDivs.length-1;
 	}
-	heroImage.css("background","url(" + images[i] + ")");
-	heroImage.css("background-size","cover");
+	$(imageDivs[i]).css("opacity","1");
 }
 function nextImage(){
 
-	resetAutoFlip()
-
-	if(i<images.length-1){
+	// resetAutoFlip()
+	$(imageDivs[i]).css("opacity","0");
+	if(i<imageDivs.length-1){
 		i++;
 	}else{
 		i=0;
 	}
-		heroImage.css("background","url(" + images[i] + ")");
-		heroImage.css("background-size","cover");
+		$(imageDivs[i]).css("opacity","1");
 }
 
 function getWidth(){
@@ -70,6 +67,7 @@ function getWidth(){
 
 
 $(document).ready(function(){
+
 	$("img[value='>']").on("click",nextImage);
 	$("img[value='<']").on("click",previousImage);
 

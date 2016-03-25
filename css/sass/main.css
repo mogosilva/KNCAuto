@@ -139,36 +139,41 @@ header {
     transform: rotate(-90deg); }
 
 /***********HERO**********/
-#hero section {
-  background: url(../../images/image_01.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  height: 0;
-  padding-bottom: 37%;
-  display: block;
-  margin-top: 100px;
-  -webkit-transition: background 0.2s linear;
-  transition: background 0.2s linear;
-  -webkit-backface-visibility: hidden; }
-#hero img {
-  cursor: pointer;
-  margin-top: 200px;
-  margin-left: 20px;
-  width: 2.8%;
-  opacity: 1;
-  position: absolute;
-  right: 25px;
-  transition: opacity 0.2s linear;
-  -webkit-backface-visibility: hidden; }
-#hero img:nth-child(3), #hero img:nth-child(4) {
-  margin-left: 0px;
-  margin-right: 20px;
-  left: 25px; }
-#hero .rightArrow.hidden {
-  opacity: 0; }
-#hero .leftArrow.hidden {
-  opacity: 0; }
+#hero {
+  background: #fff; }
+  #hero .repairsGallery {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; }
+    #hero .repairsGallery img {
+      width: 100%;
+      margin: 0px;
+      position: absolute;
+      right: 0; }
+  #hero .repairsGallery:first-child {
+    opacity: 1; }
+  #hero section {
+    height: 0;
+    padding-bottom: 37.4%;
+    display: block;
+    margin-top: 100px; }
+    #hero section img {
+      cursor: pointer;
+      margin-top: 200px;
+      margin-left: 20px;
+      width: 2.8%;
+      opacity: 1;
+      position: absolute;
+      right: 25px;
+      transition: opacity 0.2s linear;
+      -webkit-backface-visibility: hidden; }
+    #hero section img:nth-child(3), #hero section img:nth-child(4) {
+      margin-left: 0px;
+      margin-right: 20px;
+      left: 25px; }
+    #hero section .rightArrow.hidden {
+      opacity: 0; }
+    #hero section .leftArrow.hidden {
+      opacity: 0; }
 
 /*********DEALS**********/
 #deals {
