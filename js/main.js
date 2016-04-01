@@ -1,10 +1,10 @@
 
 var i=0;
 var counter=5000;
-// var autoFlip = window.setInterval(nextImage, 5000);
 var offsetAmount=0;
 var imageDivs=$(".repairsGallery");
 
+// var autoFlip = window.setInterval(nextImage, 5000);
 // function resetAutoFlip(){
 
 // 	clearInterval(autoFlip);
@@ -12,27 +12,31 @@ var imageDivs=$(".repairsGallery");
 
 // }
 
+
+function hideCurrentImage (){
+	$(imageDivs[i]).css("opacity","0");
+}
 function previousImage(){
 	
 	// resetAutoFlip();
-	$(imageDivs[i]).css("opacity","0");
+	$(imageDivs[i]).removeClass("visible").children().removeClass("visible");
 	if(i<imageDivs.length && i>0){
 		i--;
 	}else{
 		i=imageDivs.length-1;
 	}
-	$(imageDivs[i]).css("opacity","1");
+	$(imageDivs[i]).addClass("visible").children().addClass("visible");
 }
 function nextImage(){
 
 	// resetAutoFlip()
-	$(imageDivs[i]).css("opacity","0");
+	$(imageDivs[i]).removeClass("visible").children().removeClass("visible");
 	if(i<imageDivs.length-1){
 		i++;
 	}else{
 		i=0;
 	}
-		$(imageDivs[i]).css("opacity","1");
+		$(imageDivs[i]).addClass("visible").children().addClass("visible");
 }
 
 function getWidth(){
