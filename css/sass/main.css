@@ -145,11 +145,15 @@ header {
     opacity: 0;
     transition: opacity 0.3s ease-in-out; }
     #hero .repairsGallery img {
+      opacity: 0;
       width: 100%;
       margin: 0px;
       position: absolute;
-      right: 0; }
-  #hero .repairsGallery:first-child {
+      right: 0;
+      transition: opacity 0.3s ease-in-out; }
+    #hero .repairsGallery .visible {
+      opacity: 1; }
+  #hero .visible {
     opacity: 1; }
   #hero section {
     height: 0;
@@ -248,6 +252,8 @@ header {
 #specialty {
   overflow: hidden;
   background: linear-gradient(0deg, #b3b3b3, #cccccc); }
+  #specialty strong {
+    font-weight: 700; }
   #specialty article {
     text-align: left;
     margin-bottom: 40px;
