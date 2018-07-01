@@ -152,11 +152,16 @@
 				margin: 0 auto;
 				display: block;
 				padding-bottom: 20px;
-
+				&#carSparkle {
+					margin-right: auto;
+				}
 			}
 			div{
 				display: block;
 				text-align: center;
+				&.deal_description {
+					margin:0 auto;
+				}
 			}
 		}
 		li:last-child{
