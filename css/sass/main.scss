@@ -3,7 +3,7 @@
 
 
 /******************************************
-/* SETUP                   
+/* SETUP
 /*******************************************/
 
 /* Box Model Hack */
@@ -23,7 +23,7 @@
 	height: 0;
 }
 
-.clear { 
+.clear {
 	clear: both;
 }
 
@@ -32,24 +32,24 @@
 	padding: 0 0 10px 10px; /* note the padding around a right floated image */
 }
 
-.alignleft { 
+.alignleft {
 	float: left;
 	padding: 0 10px 10px 0; /* note the padding around a left floated image */
 }
 
 /******************************************
-/* SASS VARIABLES                 
+/* SASS VARIABLES
 /*******************************************/
 
 
 $color: #fff;
-$backgroundColor: #2c4eba;
-$altBackground: #fff; 
-$hoverColor: #45b1f1;
+$backgroundColor: #6d0204;
+$altBackground: #fff;
+$hoverColor: #abacae;
 
 
 /******************************************
-/* BASE STYLES                   
+/* BASE STYLES
 /*******************************************/
 body {
 	font-size: 16px;
@@ -61,7 +61,7 @@ body {
 }
 
 /******************************************
-/* LAYOUT                   
+/* LAYOUT
 /*******************************************/
 
 footer {
@@ -70,7 +70,7 @@ footer {
 }
 
 /******************************************
-/* ADDITIONAL STYLES                   
+/* ADDITIONAL STYLES
 /*******************************************/
 h1, h2	{
 	font-size: 2em;
@@ -159,7 +159,7 @@ header{
 		max-height: 100px;
 		width: 100%;
 	}
-	
+
 	.rotateMenu{
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
@@ -193,20 +193,12 @@ header{
 		opacity: 1;
 	}
 	section{
-		// background: url(../../images/beforeAfter_01.svg); 
-		// background-repeat:no-repeat;
-		// background-position: center center;
-		// background-size: cover;
 		height: 0;
-  		padding-bottom: 37.4%;
-  		display: block;
+		padding-bottom: 37.4%;
+		display: block;
 		margin-top: 100px;
-		// -webkit-transition: background 0.2s linear;
-		// transition: background 0.2s linear;
-		// -webkit-backface-visibility: hidden;
 
 		img{
-			
 			cursor: pointer;
 			margin-top: 200px;
 			margin-left: 20px;
@@ -222,11 +214,9 @@ header{
 				margin-right: 20px;
 				left:25px;
 			}
-		.rightArrow.hidden{
-			opacity: 0;  
-		}
+		.rightArrow.hidden,
 		.leftArrow.hidden{
-			opacity: 0;  
+			opacity: 0;
 		}
 	}
 
@@ -245,19 +235,26 @@ header{
 		padding-bottom: 200px;
 	}
 	img{
-		max-width: 18%;
+		max-width: 13em;
 		margin-right: 130px;
 		display: inline-block;
 		vertical-align:middle;
 		padding-bottom:0px;
 	}
+	#carSparkle {
+		margin-right: 56px;
+	}
 	div{
 		display: inline-block;
 		text-align: left;
-
 		p{
 			margin-top: 5px;
 			font-size: 1.2em;
+			line-height: 1.4;
+		}
+		&.deal_description {
+			max-width: 28em;
+			vertical-align: middle;
 		}
 	}
 
@@ -272,10 +269,11 @@ header{
 	#marker{
 		width: 20%;
 		height: auto;
+		margin-top: -1px;
 	}
 	img{
 		width: 17%;
-		
+
 	}
 	h2{
 		text-align: center;
@@ -365,7 +363,7 @@ header{
 		width: 85%;
 		color: black;
 		background: white;
-		padding: 15px 0 0 10px;	
+		padding: 15px 0 0 10px;
 		h2{
 			text-align: left;
 			margin: 0px;
@@ -470,7 +468,7 @@ header{
 		}
 	}
 	#hours{
-		
+
 		div{
 			float: left;
 			width: 50%;
